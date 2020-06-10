@@ -1,0 +1,136 @@
+\hypertarget{class_midi_sequencer_1_1_midi_interface}{}\doxysection{Midi\+Sequencer.\+Midi\+Interface Class Reference}
+\label{class_midi_sequencer_1_1_midi_interface}\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+
+
+Abstract class for M\+I\+DI interfacing.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Midi\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_midi_sequencer_1_1_midi_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_a540dbb7c761e4bae0df7400e861840e2}{Connect\+To\+Device}} (int device\+Id)
+\begin{DoxyCompactList}\small\item\em Connects to device of specified id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_midi_sequencer_1_1_midi_interface_entity}{Midi\+Interface\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_aacfc717dc3c48ae76e768559430a01a9}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Creates simple object for serialization. \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_ab1cbf32a326d88a32a1486e4be4ce537}{Get\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Returns device id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int? \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_a8043e3650523e0ff43f9c795ba27c649}{Device}}
+\begin{DoxyCompactList}\small\item\em ID of M\+I\+DI device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_a518e4b4e71516f77d1444abcc3a553d0}{Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em M\+I\+DI channel used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for M\+I\+DI interfacing. 
+
+
+
+Definition at line 6 of file Midi\+Interface.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_interface_a540dbb7c761e4bae0df7400e861840e2}\label{class_midi_sequencer_1_1_midi_interface_a540dbb7c761e4bae0df7400e861840e2}} 
+\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}!ConnectToDevice@{ConnectToDevice}}
+\index{ConnectToDevice@{ConnectToDevice}!MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+\doxysubsubsection{\texorpdfstring{ConnectToDevice()}{ConnectToDevice()}}
+{\footnotesize\ttfamily abstract void Midi\+Sequencer.\+Midi\+Interface.\+Connect\+To\+Device (\begin{DoxyParamCaption}\item[{int}]{device\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Connects to device of specified id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & ID of device to connect to.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface_aa35e9595184fad2bae7b34a99686677a}{Midi\+Sequencer.\+Midi\+In\+Interface}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface_a13a322795f828f4ab9f0f4a0e383b9fa}{Midi\+Sequencer.\+Midi\+Out\+Interface}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_interface_ab1cbf32a326d88a32a1486e4be4ce537}\label{class_midi_sequencer_1_1_midi_interface_ab1cbf32a326d88a32a1486e4be4ce537}} 
+\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}!GetDevice@{GetDevice}}
+\index{GetDevice@{GetDevice}!MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+\doxysubsubsection{\texorpdfstring{GetDevice()}{GetDevice()}}
+{\footnotesize\ttfamily int? Midi\+Sequencer.\+Midi\+Interface.\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns device id. 
+
+\begin{DoxyReturn}{Returns}
+Device id to which interface is connected if it is connected or null if it\textquotesingle{}s not.
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Midi\+Interface.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_interface_aacfc717dc3c48ae76e768559430a01a9}\label{class_midi_sequencer_1_1_midi_interface_aacfc717dc3c48ae76e768559430a01a9}} 
+\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_midi_sequencer_1_1_midi_interface_entity}{Midi\+Interface\+Entity}} Midi\+Sequencer.\+Midi\+Interface.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates simple object for serialization. 
+
+\begin{DoxyReturn}{Returns}
+Object for serialization.
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Midi\+Interface.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_interface_a8043e3650523e0ff43f9c795ba27c649}\label{class_midi_sequencer_1_1_midi_interface_a8043e3650523e0ff43f9c795ba27c649}} 
+\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}!Device@{Device}}
+\index{Device@{Device}!MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+\doxysubsubsection{\texorpdfstring{Device}{Device}}
+{\footnotesize\ttfamily int? Midi\+Sequencer.\+Midi\+Interface.\+Device\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+ID of M\+I\+DI device. 
+
+
+
+Definition at line 11 of file Midi\+Interface.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_interface_a518e4b4e71516f77d1444abcc3a553d0}\label{class_midi_sequencer_1_1_midi_interface_a518e4b4e71516f77d1444abcc3a553d0}} 
+\index{MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}!Channel@{Channel}}
+\index{Channel@{Channel}!MidiSequencer.MidiInterface@{MidiSequencer.MidiInterface}}
+\doxysubsubsection{\texorpdfstring{Channel}{Channel}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Midi\+Interface.\+Channel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+M\+I\+DI channel used. 
+
+
+
+Definition at line 16 of file Midi\+Interface.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_midi_interface_8cs}{Midi\+Interface.\+cs}}\end{DoxyCompactItemize}

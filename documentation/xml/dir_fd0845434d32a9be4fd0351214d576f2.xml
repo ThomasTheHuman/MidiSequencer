@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_fd0845434d32a9be4fd0351214d576f2" kind="dir">
+    <compoundname>MidiSequencer</compoundname>
+    <innerfile refid="_app_8xaml_8cs">App.xaml.cs</innerfile>
+    <innerfile refid="_clock_sequence_8xaml_8cs">ClockSequence.xaml.cs</innerfile>
+    <innerfile refid="_clock_sequence_entity_8cs">ClockSequenceEntity.cs</innerfile>
+    <innerfile refid="_clock_step_8xaml_8cs">ClockStep.xaml.cs</innerfile>
+    <innerfile refid="_clock_step_entity_8cs">ClockStepEntity.cs</innerfile>
+    <innerfile refid="_color_pair_8cs">ColorPair.cs</innerfile>
+    <innerfile refid="_corrupted_file_exception_8cs">CorruptedFileException.cs</innerfile>
+    <innerfile refid="_drum_sequence_8xaml_8cs">DrumSequence.xaml.cs</innerfile>
+    <innerfile refid="_drum_sequence_entity_8cs">DrumSequenceEntity.cs</innerfile>
+    <innerfile refid="_drum_step_8xaml_8cs">DrumStep.xaml.cs</innerfile>
+    <innerfile refid="_drum_step_entity_8cs">DrumStepEntity.cs</innerfile>
+    <innerfile refid="_main_window_8xaml_8cs">MainWindow.xaml.cs</innerfile>
+    <innerfile refid="_midi_in_interface_8cs">MidiInInterface.cs</innerfile>
+    <innerfile refid="_midi_interface_8cs">MidiInterface.cs</innerfile>
+    <innerfile refid="_midi_interface_entity_8cs">MidiInterfaceEntity.cs</innerfile>
+    <innerfile refid="_midi_out_interface_8cs">MidiOutInterface.cs</innerfile>
+    <innerfile refid="_mono_sequence_8xaml_8cs">MonoSequence.xaml.cs</innerfile>
+    <innerfile refid="_mono_sequence_entity_8cs">MonoSequenceEntity.cs</innerfile>
+    <innerfile refid="_mono_step_8xaml_8cs">MonoStep.xaml.cs</innerfile>
+    <innerfile refid="_mono_step_entity_8cs">MonoStepEntity.cs</innerfile>
+    <innerfile refid="_poly_sequence_8xaml_8cs">PolySequence.xaml.cs</innerfile>
+    <innerfile refid="_poly_sequence_entity_8cs">PolySequenceEntity.cs</innerfile>
+    <innerfile refid="_poly_step_8xaml_8cs">PolyStep.xaml.cs</innerfile>
+    <innerfile refid="_poly_step_entity_8cs">PolyStepEntity.cs</innerfile>
+    <innerfile refid="_sequence_8cs">Sequence.cs</innerfile>
+    <innerfile refid="_sequence_entity_8cs">SequenceEntity.cs</innerfile>
+    <innerfile refid="_sequencer_8xaml_8cs">Sequencer.xaml.cs</innerfile>
+    <innerfile refid="_sequencer_entity_8cs">SequencerEntity.cs</innerfile>
+    <innerfile refid="_sequence_timer_8cs">SequenceTimer.cs</innerfile>
+    <innerfile refid="_step_8cs">Step.cs</innerfile>
+    <innerfile refid="_step_entity_8cs">StepEntity.cs</innerfile>
+    <innerfile refid="_toggle_with_label_8xaml_8cs">ToggleWithLabel.xaml.cs</innerfile>
+    <innerfile refid="_toolbar_8xaml_8cs">Toolbar.xaml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MidiSequencer/"/>
+  </compounddef>
+</doxygen>

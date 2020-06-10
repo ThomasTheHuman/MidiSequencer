@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="class_midi_sequencer_1_1_app" kind="class"><name>MidiSequencer::App</name>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_clock_sequence" kind="class"><name>MidiSequencer::ClockSequence</name>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1aac147c72d42439a3e36bc3e90326ebd0" kind="variable"><name>_timer</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1ada6b7ecfbbe90d6f292d374ff864fade" kind="function"><name>ClockSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1ab83954ada13411dff79f55954dec24f5" kind="function"><name>ReloadTimer</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a3c00d28a5118e0357e61bf31e45e9c35" kind="function"><name>Start</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a7d2ebc2dc0a516f9a97185404208a2a7" kind="function"><name>Pause</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a63d555dfb0177e08a4ca9f2604fb90d4" kind="function"><name>Stop</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a89245cc412ba731a47b80f4f05171292" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a4809553c1d8e85e8c003bd1ba336ab3a" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a25b9c3a632e1fb851facd059c7630701" kind="function"><name>ReloadSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1adf171aa503270a2b16c9cd1c0f9939c6" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_sequence_1a9b7ad39d6be2864ac031f64f16cc7673" kind="function"><name>RecordButton_Click</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_clock_sequence_entity" kind="class"><name>MidiSequencer::ClockSequenceEntity</name>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_clock_step" kind="class"><name>MidiSequencer::ClockStep</name>
+    <member refid="class_midi_sequencer_1_1_clock_step_1a9c0f8ca7eb143dd2b2d32e8752b7630a" kind="function"><name>ClockStep</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1aea762722933bdc1fee448a2ef82f40f8" kind="function"><name>LoadMidi</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1abab6539e3228f2d17c206c2dc66b14c4" kind="function"><name>NoteOn</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1a67cc760f353f6cf63b610accf0045d26" kind="function"><name>NoteOff</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1a5a511dc47e13279feb86d6a470b846ca" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1ae4ede0f70fe28f9ac5a217d7a0a31a38" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_clock_step_1a32eba55395c7afb4016944d42790f9c3" kind="function"><name>Setup</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_clock_step_entity" kind="class"><name>MidiSequencer::ClockStepEntity</name>
+  </compound>
+  <compound refid="struct_midi_sequencer_1_1_color_pair" kind="struct"><name>MidiSequencer::ColorPair</name>
+    <member refid="struct_midi_sequencer_1_1_color_pair_1a53d2817c00e3ebe6fc077a6c42bbd079" kind="variable"><name>On</name></member>
+    <member refid="struct_midi_sequencer_1_1_color_pair_1ab0f55bb1d9a28390cd22321ac519eceb" kind="variable"><name>Off</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_corrupted_file_exception" kind="class"><name>MidiSequencer::CorruptedFileException</name>
+    <member refid="class_midi_sequencer_1_1_corrupted_file_exception_1a2bae6fbec976a66589c05ac6c8454b6b" kind="function"><name>CorruptedFileException</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_drum_sequence" kind="class"><name>MidiSequencer::DrumSequence</name>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1a476c7bd1e41140618e64a86a510cb4f0" kind="property"><name>InNote</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1a93517bdbf344cc669370659ed4278fe9" kind="property"><name>OutNote</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1a506a000ae817f44dc40d90997fd232ca" kind="function"><name>DrumSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1afd5f4e7cf8ca240f9e1bb198a01d6807" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1a579b244f973fd00509459140e469a8b7" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1aa0303c8fdfbd4c711c25ce9969564d55" kind="function"><name>ReloadSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1a324d39158646f6b3a46139e089798848" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_1aa0c9c563b7e4f2e0146f7959670ba674" kind="function"><name>RecordButton_Click</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_drum_sequence_entity" kind="class"><name>MidiSequencer::DrumSequenceEntity</name>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_entity_1a3452bf08e132eb9b2b9f70161ce97295" kind="property"><name>InNote</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_entity_1af1b8bb3668c1046705141a58c3ae01da" kind="property"><name>OutNote</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_sequence_entity_1ac46fb0588234bf1fd8cc1c0de43a4942" kind="property"><name>Steps</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_drum_step" kind="class"><name>MidiSequencer::DrumStep</name>
+    <member refid="class_midi_sequencer_1_1_drum_step_1a4bbc235350d1d49032fab6468fb23548" kind="function"><name>DrumStep</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1acbb3693a624ea7876e8654b151a63e9f" kind="function"><name>LoadMidi</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1a6c39c1e9b040e98a6355e5bca1a43905" kind="function"><name>NoteOn</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1a3a593b7796a5c2e10b8d432904d56905" kind="function"><name>NoteOff</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1ac13d3589177994fb58e34672003764d1" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1afdb509dca42c24410b36d3e06736181f" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_drum_step_1acd505f0bfb2f8141d08ad8ffbd367c37" kind="function"><name>Setup</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_drum_step_entity" kind="class"><name>MidiSequencer::DrumStepEntity</name>
+    <member refid="class_midi_sequencer_1_1_drum_step_entity_1af76eb7d9cba0294412a3bb2edc7f79e7" kind="property"><name>On</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_main_window" kind="class"><name>MidiSequencer::MainWindow</name>
+    <member refid="class_midi_sequencer_1_1_main_window_1a4a8d9759780a42ecdb324d5e61f57109" kind="function"><name>MainWindow</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1afe12baf2da6a303a9216ce597597f422" kind="function"><name>OpenToolbar</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1a436a394e51cbd43ddffaed78f82f52b6" kind="function"><name>LoadButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1ab18289127ece221c1a74672da10cdd88" kind="function"><name>SaveButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1a2a9b42b73b5f6ce0b8dac641dff06ca5" kind="function"><name>StopButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1a1c1c8dcfb115fbb498d6b25b31f39da2" kind="function"><name>PauseButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1af5d7b9508df4b71a3a4de3c766686f10" kind="function"><name>PlayButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1aa34bb64c727791d1d54b2fce069836df" kind="function"><name>AddSequenceHandler&lt; T &gt;</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1ac60fb10cc9af8dd36aef29ef17ba86b8" kind="function"><name>OnBpmChange</name></member>
+    <member refid="class_midi_sequencer_1_1_main_window_1a49741238f0b7a8e524ac9f8e3f413454" kind="function"><name>MainWindow_Closing</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_midi_in_interface" kind="class"><name>MidiSequencer::MidiInInterface</name>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1a16e4f628a7e564f8bf64c713f313da40" kind="variable"><name>_connection</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1a3fa48cbc460cca424774ae6c296a9b7e" kind="property"><name>EventPool</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1ab32424f0835f014caa3e7d23bc94c2da" kind="property"><name>NoteCount</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1aa35e9595184fad2bae7b34a99686677a" kind="function"><name>ConnectToDevice</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1a22fac0a9c774ee33e5457ea391b2aa60" kind="function"><name>Connection_MessageReceived</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_in_interface_1a13d3191b9ca486d352091320097aee63" kind="function"><name>GetMidiInDevices</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_midi_interface" kind="class"><name>MidiSequencer::MidiInterface</name>
+    <member refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" kind="variable"><name>Device</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_interface_1a518e4b4e71516f77d1444abcc3a553d0" kind="property"><name>Channel</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_interface_1a540dbb7c761e4bae0df7400e861840e2" kind="function"><name>ConnectToDevice</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_interface_1aacfc717dc3c48ae76e768559430a01a9" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_interface_1ab1cbf32a326d88a32a1486e4be4ce537" kind="function"><name>GetDevice</name></member>
+  </compound>
+  <compound refid="struct_midi_sequencer_1_1_midi_interface_entity" kind="struct"><name>MidiSequencer::MidiInterfaceEntity</name>
+    <member refid="struct_midi_sequencer_1_1_midi_interface_entity_1a6cf5f46ad0fab70a4fced4d43472cd00" kind="property"><name>Channel</name></member>
+    <member refid="struct_midi_sequencer_1_1_midi_interface_entity_1a376230f0f9c7ead5f3a7cc9bd1980a51" kind="property"><name>Device</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_midi_out_interface" kind="class"><name>MidiSequencer::MidiOutInterface</name>
+    <member refid="class_midi_sequencer_1_1_midi_out_interface_1a498879a0bd62ad683d1e27a55b82b626" kind="variable"><name>_connection</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_out_interface_1ade3b6ef59efe88b2a6deadbfb1c37e3f" kind="function"><name>MidiOutInterface</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_out_interface_1a13a322795f828f4ab9f0f4a0e383b9fa" kind="function"><name>ConnectToDevice</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_out_interface_1a67f257587d6bddbe363477932f1f445e" kind="function"><name>SendEvent</name></member>
+    <member refid="class_midi_sequencer_1_1_midi_out_interface_1aac34c44533b6309f183690e549d19f66" kind="function"><name>GetMidiOutDevices</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_mono_sequence" kind="class"><name>MidiSequencer::MonoSequence</name>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1abe54ca744a47c5f9f81d81d19ff9336c" kind="function"><name>MonoSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1a810d3ae325766b1895b74613f8453f4b" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1a36db29d71ba5ecdef4b49d8d39408eeb" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1a9d60cb2cb9354443833377689f01e387" kind="function"><name>ReloadSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1a9b41480d5171807d4182a2b5a654e5de" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_1af25225cea3aba811163bbd7182937bee" kind="function"><name>RecordButton_Click</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_mono_sequence_entity" kind="class"><name>MidiSequencer::MonoSequenceEntity</name>
+    <member refid="class_midi_sequencer_1_1_mono_sequence_entity_1aff8a07f57b7bd36a0a50110814afcbb7" kind="property"><name>Steps</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_mono_step" kind="class"><name>MidiSequencer::MonoStep</name>
+    <member refid="class_midi_sequencer_1_1_mono_step_1abbecf94499df59da9f3a708b9b2e1551" kind="property"><name>MidiEvent</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1aa4c5896b900bce3fa22dcabfaeaa9ebd" kind="function"><name>MonoStep</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1a9d34f3bf34793591f3cad70e7ee62874" kind="function"><name>LoadMidi</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1a944e1e6bc6005a53f4e3046d7e09ec86" kind="function"><name>NoteOn</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1a91306e9775dab25f8f817220d5e28c8c" kind="function"><name>NoteOff</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1a2b1014060f19da3788e099c6ae8962ae" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1ae47c57a9874c8faf5387e5ca492768ed" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_1a4b5f13e1de4c858b56855135db2f769e" kind="function"><name>Setup</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_mono_step_entity" kind="class"><name>MidiSequencer::MonoStepEntity</name>
+    <member refid="class_midi_sequencer_1_1_mono_step_entity_1af67ab309a0f95317f629525f2d704e03" kind="property"><name>On</name></member>
+    <member refid="class_midi_sequencer_1_1_mono_step_entity_1a31260a571967ad8b3629a063a9d19637" kind="property"><name>Note</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_poly_sequence" kind="class"><name>MidiSequencer::PolySequence</name>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1a1e40dadc14c836b7c27b958f43d4ed93" kind="function"><name>PolySequence</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1ad4b828b24e109f24a4921b8cd1ed950b" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1ad893cc03b811b723ab0eeff574280bfb" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1a6ba24c279d57df33bac519a35f406b92" kind="function"><name>ReloadSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1ad2a1f5c79385a41aab24c84edbd2ad65" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_1af68a9e172a265c9cd1651c1b82a32e8c" kind="function"><name>RecordButton_Click</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_poly_sequence_entity" kind="class"><name>MidiSequencer::PolySequenceEntity</name>
+    <member refid="class_midi_sequencer_1_1_poly_sequence_entity_1a6e5b5b0d76fe7897dd9a97a753664952" kind="property"><name>Steps</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_poly_step" kind="class"><name>MidiSequencer::PolyStep</name>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a9ae35edb7aa3ec9730666e6771941716" kind="variable"><name>_midiEvents</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a5af6585483a30bccd55c8aa33141a4d3" kind="function"><name>PolyStep</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a92df748b9bfdb2044197695db8137473" kind="function"><name>LoadMidi</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a79be3569dc113dded1bb673424ef3f70" kind="function"><name>NoteOn</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1ae5eae0c2eadfcc062fb62a47c48ae2e4" kind="function"><name>NoteOff</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a5cf103f5db95e950ba07907533f10eb7" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a1b1ff9ff2cca6146a0012a756394431c" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_1a390ed8ba3f9bd850e387b1a4d15d907d" kind="function"><name>Setup</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_poly_step_entity" kind="class"><name>MidiSequencer::PolyStepEntity</name>
+    <member refid="class_midi_sequencer_1_1_poly_step_entity_1a3a8c2be1410c1c09f70ded701c9a3ead" kind="property"><name>On</name></member>
+    <member refid="class_midi_sequencer_1_1_poly_step_entity_1ad18ab28458fc20a21e24c70c8ed0b8a1" kind="property"><name>Notes</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_sequence" kind="class"><name>MidiSequencer::Sequence</name>
+    <member refid="class_midi_sequencer_1_1_sequence_1aa7df60eea00c669fd851bb72634ff4cf" kind="variable"><name>_highlightBorder</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a58bb5520dac90af4182fa4fa4af0bf11" kind="variable"><name>_stepsContainer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a1b133a1d86b2d4cf49c467683a9ab70e" kind="variable"><name>EditButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a6e650d9fd781337d2daf3e94053e6402" kind="variable"><name>HotRecButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a276ab4613ba8e7b6f3927c3f7d8cfd87" kind="variable"><name>OnButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a99fabab63f5c1ffffb0c03d5b0719a83" kind="variable"><name>RecordButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a37f0a2dc987e43a6a25d15228f3cc918" kind="variable"><name>RestButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a2952951e35c3752bbdbea1e2567d5b80" kind="variable"><name>Sequencer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a55d16a9d0ccd0758b608c5e5974146d5" kind="variable"><name>StackPanel</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ab23dfab0870a54af00dacb749bc3cc8d" kind="variable"><name>DeleteButton</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ac0c39bfed3251ae864932ac6a462047c" kind="variable"><name>Recording</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ad8bab2cd74f5fa1b270c520968fb63de" kind="variable"><name>Rest</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a867d15e30f9a8af2afcd9fd2ace6a623" kind="variable"><name>Input</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a45016fc3d96be0d667f3129ee6861fbd" kind="variable"><name>Output</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a721b30c3d584b91dcc5bd52d7af5baea" kind="variable"><name>HotRec</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1adfd78368c42036fb37cddd33996baeb5" kind="variable"><name>On</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a8fde1942754f03cf52e8539cf2ef1706" kind="property"><name>Gate</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a2c2996eef8c9ae401ea0e5daeb2729e9" kind="property"><name>Beats</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a1c5220d8276b3edd3bddce1ce0236591" kind="property"><name>Bars</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a5accae623ec22da47738fb514a8335ce" kind="property"><name>Steps</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1abf6ab1a40efb3d371541c7ab706097d3" kind="property"><name>ColorPair</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a4ef6dcfd12e1ed4fa01775a04daa3937" kind="function"><name>Sequence</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a922b999e438960c61fa57c0364628078" kind="function"><name>RecordButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a7be92fbe069cea77a41bc50ddf8a2ecb" kind="function"><name>ReloadSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a32a70583962f2d02f747d5107c81f3aa" kind="function"><name>ReloadSteps&lt; T &gt;</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1acb0ec7085ea0aa171e598ce312f0e81d" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ae7eb1de8e47211bc7319941f75ce57e1" kind="function"><name>SequenceLength</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ab5e082ef82700b76c771181dec082bfd" kind="function"><name>RestButton_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a21db3404710808a437c0730eb85f8079" kind="function"><name>OnEdit</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1aa7600477400529588ba02cd606ef72fd" kind="function"><name>OnDelete</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1ae4a7aac126d6385b3f2e15d81fd14462" kind="function"><name>RenderSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a1a6c34b01724de9a9b551984a39e4a19" kind="function"><name>SetHighlight</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a74eb9ec2cc109a3c7d54a29aa63edc42" kind="function"><name>SetSteps</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a530c17163a5e071c12c24c2e7c2d9530" kind="function"><name>StopRecording</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a823cbb8d236929d1a3c1a4c2a2e1ee8c" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_1a2d6f0729c213c4ab08bbb6f708e10674" kind="function"><name>Deserialize</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_sequence_entity" kind="class"><name>MidiSequencer::SequenceEntity</name>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1ac0609752d402a1bae5e0c453740a64ce" kind="property"><name>Type</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1ab24db4f8408bd004d87173f0dfa616b8" kind="property"><name>Gate</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1a2a76ec1de6578e12c2d0f2565d1d9d1d" kind="property"><name>Beats</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1a5f276ee2ca529a1494c31f761950bc2e" kind="property"><name>Bars</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1a549a8036a33108705875c53a2e70cdcd" kind="property"><name>Input</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_entity_1a9343fc5ce52cb8167156b873cd54c384" kind="property"><name>Output</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_sequencer" kind="class"><name>MidiSequencer::Sequencer</name>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a5980eddafe9f1d5e3890af2bf3706af0" kind="property"><name>Sequences</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1acec79e7732d32c2afa624e9f8cd95138" kind="property"><name>ClockSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a88ca8dd47f1e2c86814e26fe39939d3d" kind="property"><name>Bpm</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a29a5ae76d0408569de87478177bc50ac" kind="function"><name>Sequencer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a34db5a13c6b776d5034a91e8e8df1516" kind="function"><name>Deserialize</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a3e35c3ea4e6f32fe87ffc83d84faddd0" kind="function"><name>AddSequence&lt; T &gt;</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a76cc41adedf1cc5ccab3f7e4a2f02b4b" kind="function"><name>RemoveSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_1a1e4f12336210b1c620ba77b07cd42dc5" kind="function"><name>Save</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_sequencer_entity" kind="class"><name>MidiSequencer::SequencerEntity</name>
+    <member refid="class_midi_sequencer_1_1_sequencer_entity_1a5d64a442fbc6c7f7b5bf5788ddc37da9" kind="property"><name>Bpm</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_entity_1adec82a17fea444222f2b47b5bc8afeaf" kind="property"><name>Clock</name></member>
+    <member refid="class_midi_sequencer_1_1_sequencer_entity_1a1e350fee7ba4dd29672266a13759217c" kind="property"><name>Sequences</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_sequence_timer" kind="class"><name>MidiSequencer::SequenceTimer</name>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a234bc570ed3dc9ea9bdacd8c3e31faf9" kind="variable"><name>_sequencer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a0ec2731479d1e3f90cabd2a93eaafb6a" kind="variable"><name>_sequencesLengthsSet</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1ac15a9fe71fe2566f598e8f1cfa9773df" kind="variable"><name>_steps</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a7150915f00f549489929a17f15a7af18" kind="variable"><name>_timer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1acf32f7f707fbc5d0268562c6667cbbb8" kind="variable"><name>_complexStepCount</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a69174fd82bcdd4efc24b2a674f98cc24" kind="variable"><name>_currentStep</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a3a7308d0a380998712c131b7e140315a" kind="function"><name>SequenceTimer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a4bb576c3cca96fb7781f5c40f1fa39ea" kind="function"><name>SetTimer</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1ae39e843b4a05da9f31beee9f450a3c3a" kind="function"><name>Start</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a4f2762b32e916397fe5a735b7fc9c15d" kind="function"><name>Stop</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1ae10c9f8937bc4d95eabee934fe9a0797" kind="function"><name>Pause</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a5fb180a0d2493a4b60374ac9174af0be" kind="function"><name>TickEvent</name></member>
+    <member refid="class_midi_sequencer_1_1_sequence_timer_1a61df39f6d6f909c1659cc7d04bfdfc18" kind="function"><name>PlayNote</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_step" kind="class"><name>MidiSequencer::Step</name>
+    <member refid="class_midi_sequencer_1_1_step_1ae684218599cc0cb726a0d2fa9d0cf29f" kind="variable"><name>_colorPair</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1adbfd9c2f09471acd8754db54121e3998" kind="variable"><name>Button</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a1665e6cb860c976387a7b3e557127c97" kind="variable"><name>Container</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a645cbb61fd187fe55601e7a0788d2235" kind="variable"><name>Highlight</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a90f7043ac67cf35d802da1a30ec4a040" kind="variable"><name>On</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1ab6a731fc68a04c9c4ee55fd2298f50e9" kind="function"><name>Step</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a59c1d8593adee8faa298e4a0963897e4" kind="function"><name>Setup</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1ab4a29ea126ac68a9a900e68412b9565f" kind="function"><name>Toggle</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a5465597ed6cb077adac244af1f2e633b" kind="function"><name>Toggle</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1ac5877fa0eb2f92071500097e015de735" kind="function"><name>SetNumber</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1ab1aedded2707fd9b501a7b4f40b12250" kind="function"><name>SetWidth</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a458d59837c176daae1284d7102bec1d4" kind="function"><name>SetHighlight</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a39abde6e3aba62e6d2d49986cc14ef9e" kind="function"><name>LoadMidi</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1aaf39e8682ebc20443d572f496e7f565e" kind="function"><name>NoteOn</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a4a057c4960374fe85455e7088caa1f19" kind="function"><name>NoteOff</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1a6699850c926004b57cf4f9d1a2195bff" kind="function"><name>Serialize</name></member>
+    <member refid="class_midi_sequencer_1_1_step_1acbdfb0ae6a59af24407c977fb611a80a" kind="function"><name>Deserialize</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_step_entity" kind="class"><name>MidiSequencer::StepEntity</name>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_toggle_with_label" kind="class"><name>MidiSequencer::ToggleWithLabel</name>
+    <member refid="class_midi_sequencer_1_1_toggle_with_label_1a996d89cc0258a86cb1ce75e758d03a40" kind="variable"><name>_toggle</name></member>
+    <member refid="class_midi_sequencer_1_1_toggle_with_label_1a6bfaa2c1526834637937ff68ff22717b" kind="variable"><name>IsChecked</name></member>
+    <member refid="class_midi_sequencer_1_1_toggle_with_label_1a95d37b8be0ae986553f6baaaab1c0a8d" kind="function"><name>ToggleWithLabel</name></member>
+    <member refid="class_midi_sequencer_1_1_toggle_with_label_1adc2a6d7263bf5475841712bf666f8128" kind="function"><name>Set</name></member>
+  </compound>
+  <compound refid="class_midi_sequencer_1_1_toolbar" kind="class"><name>MidiSequencer::Toolbar</name>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a98ddf7de0a93db6b79e28dcf09e0c870" kind="variable"><name>_inChannels</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1af5742e683c1695af75d9edff56343908" kind="variable"><name>_notes</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a2b543fcc9ca004db725b3fa7d0ce6733" kind="variable"><name>_octaves</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1abd3fe63c2c97c381f206ce10d08a8f4c" kind="variable"><name>_outChannels</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1abbd0907cfd51a439f9c06302fd5dde65" kind="variable"><name>_midiInDevices</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1affbdcb8d310ef17bff56f35b1da6ebf9" kind="variable"><name>_midiOutDevices</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a0038245ccf6632450b1461a7a57875ce" kind="variable"><name>_targetSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a8ef0ccdc8de4cf27610fcf84ff061479" kind="function"><name>Toolbar</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1ab240cc682631b9a9f1dca585e26a4795" kind="function"><name>SetSequence</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1afbafd83df528b9186eaa091a16ee4c7e" kind="function"><name>OutChannelForm_SelectionChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a74226e15bad0993687705ed03ab093b7" kind="function"><name>OutDeviceForm_SelectionChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1ac331a5b95e250f5cd22197eacfdbd36f" kind="function"><name>OutDeviceForm_DropDownOpened</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a7f928e12c320640ced6fd86b0c842b4b" kind="function"><name>InChannelForm_SelectionChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1af5e5e15974e390d6657284df97e1461f" kind="function"><name>InDeviceForm_SelectionChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a299adaa94601172c69cd52021fee8ab2" kind="function"><name>InDeviceForm_DropDownOpened</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a020e8abdb328ed6aa066ff191bced0ad" kind="function"><name>OnBeatsOrBarsChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a96dd25758d57ffa6b860d86a7d2292a3" kind="function"><name>AttachEvents</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a6cb3209c2834e48cd38b258ccd551463" kind="function"><name>DetectInput_Click</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1ae8fde6aa45e1164cfee8de214e2f766e" kind="function"><name>OutNoteOrOctChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1aae24b607543471752f43ba308d6d2853" kind="function"><name>InNoteOrOctChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1a71911b50b7b7eadf4c38da5e3481b14d" kind="function"><name>GateTime_TextChanged</name></member>
+    <member refid="class_midi_sequencer_1_1_toolbar_1ad9850d703ad6c09e4491b014962f55eb" kind="function"><name>DetachEvents</name></member>
+  </compound>
+  <compound refid="namespace_material_design_themes_1_1_wpf" kind="namespace"><name>MaterialDesignThemes::Wpf</name>
+  </compound>
+  <compound refid="namespace_math_net_1_1_numerics" kind="namespace"><name>MathNet::Numerics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_win32" kind="namespace"><name>Microsoft::Win32</name>
+  </compound>
+  <compound refid="namespace_midi_sequencer" kind="namespace"><name>MidiSequencer</name>
+  </compound>
+  <compound refid="namespace_midi_sequencer_1_1_properties" kind="namespace"><name>MidiSequencer::Properties</name>
+  </compound>
+  <compound refid="namespace_n_audio_1_1_midi" kind="namespace"><name>NAudio::Midi</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_timers" kind="namespace"><name>System::Timers</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls_1_1_primitives" kind="namespace"><name>System::Windows::Controls::Primitives</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_effects" kind="namespace"><name>System::Windows::Media::Effects</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_clock_sequence_8xaml_8cs" kind="file"><name>ClockSequence.xaml.cs</name>
+  </compound>
+  <compound refid="_clock_sequence_entity_8cs" kind="file"><name>ClockSequenceEntity.cs</name>
+  </compound>
+  <compound refid="_clock_step_8xaml_8cs" kind="file"><name>ClockStep.xaml.cs</name>
+  </compound>
+  <compound refid="_clock_step_entity_8cs" kind="file"><name>ClockStepEntity.cs</name>
+  </compound>
+  <compound refid="_color_pair_8cs" kind="file"><name>ColorPair.cs</name>
+  </compound>
+  <compound refid="_corrupted_file_exception_8cs" kind="file"><name>CorruptedFileException.cs</name>
+  </compound>
+  <compound refid="_drum_sequence_8xaml_8cs" kind="file"><name>DrumSequence.xaml.cs</name>
+  </compound>
+  <compound refid="_drum_sequence_entity_8cs" kind="file"><name>DrumSequenceEntity.cs</name>
+  </compound>
+  <compound refid="_drum_step_8xaml_8cs" kind="file"><name>DrumStep.xaml.cs</name>
+  </compound>
+  <compound refid="_drum_step_entity_8cs" kind="file"><name>DrumStepEntity.cs</name>
+  </compound>
+  <compound refid="_main_window_8xaml_8cs" kind="file"><name>MainWindow.xaml.cs</name>
+  </compound>
+  <compound refid="_midi_in_interface_8cs" kind="file"><name>MidiInInterface.cs</name>
+  </compound>
+  <compound refid="_midi_interface_8cs" kind="file"><name>MidiInterface.cs</name>
+  </compound>
+  <compound refid="_midi_interface_entity_8cs" kind="file"><name>MidiInterfaceEntity.cs</name>
+  </compound>
+  <compound refid="_midi_out_interface_8cs" kind="file"><name>MidiOutInterface.cs</name>
+  </compound>
+  <compound refid="_mono_sequence_8xaml_8cs" kind="file"><name>MonoSequence.xaml.cs</name>
+  </compound>
+  <compound refid="_mono_sequence_entity_8cs" kind="file"><name>MonoSequenceEntity.cs</name>
+  </compound>
+  <compound refid="_mono_step_8xaml_8cs" kind="file"><name>MonoStep.xaml.cs</name>
+  </compound>
+  <compound refid="_mono_step_entity_8cs" kind="file"><name>MonoStepEntity.cs</name>
+  </compound>
+  <compound refid="_poly_sequence_8xaml_8cs" kind="file"><name>PolySequence.xaml.cs</name>
+  </compound>
+  <compound refid="_poly_sequence_entity_8cs" kind="file"><name>PolySequenceEntity.cs</name>
+  </compound>
+  <compound refid="_poly_step_8xaml_8cs" kind="file"><name>PolyStep.xaml.cs</name>
+  </compound>
+  <compound refid="_poly_step_entity_8cs" kind="file"><name>PolyStepEntity.cs</name>
+  </compound>
+  <compound refid="_sequence_8cs" kind="file"><name>Sequence.cs</name>
+  </compound>
+  <compound refid="_sequence_entity_8cs" kind="file"><name>SequenceEntity.cs</name>
+  </compound>
+  <compound refid="_sequencer_8xaml_8cs" kind="file"><name>Sequencer.xaml.cs</name>
+  </compound>
+  <compound refid="_sequencer_entity_8cs" kind="file"><name>SequencerEntity.cs</name>
+  </compound>
+  <compound refid="_sequence_timer_8cs" kind="file"><name>SequenceTimer.cs</name>
+  </compound>
+  <compound refid="_step_8cs" kind="file"><name>Step.cs</name>
+  </compound>
+  <compound refid="_step_entity_8cs" kind="file"><name>StepEntity.cs</name>
+  </compound>
+  <compound refid="_toggle_with_label_8xaml_8cs" kind="file"><name>ToggleWithLabel.xaml.cs</name>
+  </compound>
+  <compound refid="_toolbar_8xaml_8cs" kind="file"><name>Toolbar.xaml.cs</name>
+  </compound>
+  <compound refid="dir_fd0845434d32a9be4fd0351214d576f2" kind="dir"><name>MidiSequencer</name>
+  </compound>
+</doxygenindex>

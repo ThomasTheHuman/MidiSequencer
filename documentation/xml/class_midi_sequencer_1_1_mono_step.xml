@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_mono_step" kind="class" language="C#" prot="public">
+    <compoundname>MidiSequencer::MonoStep</compoundname>
+    <basecompoundref refid="class_midi_sequencer_1_1_step" prot="public" virt="non-virtual">MidiSequencer.Step</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_midi_sequencer_1_1_mono_step_1abbecf94499df59da9f3a708b9b2e1551" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>MidiEvent</type>
+        <definition>MidiEvent MidiSequencer.MonoStep.MidiEvent</definition>
+        <argsstring></argsstring>
+        <name>MidiEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="20" column="27" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1aa4c5896b900bce3fa22dcabfaeaa9ebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MidiSequencer.MonoStep.MonoStep</definition>
+        <argsstring>()</argsstring>
+        <name>MonoStep</name>
+        <briefdescription>
+<para>Initializes control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="15" column="16" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1a9d34f3bf34793591f3cad70e7ee62874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.MonoStep.LoadMidi</definition>
+        <argsstring>(Sequence sequence)</argsstring>
+        <name>LoadMidi</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1a39abde6e3aba62e6d2d49986cc14ef9e">LoadMidi</reimplements>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref></type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para><para>Loads midi from event pool to step.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="34" column="30" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="34" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1a944e1e6bc6005a53f4e3046d7e09ec86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.MonoStep.NoteOn</definition>
+        <argsstring>(Sequence sequence)</argsstring>
+        <name>NoteOn</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1aaf39e8682ebc20443d572f496e7f565e">NoteOn</reimplements>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref></type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para><para>Sends note on event.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="45" column="30" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1a91306e9775dab25f8f817220d5e28c8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.MonoStep.NoteOff</definition>
+        <argsstring>(Sequence sequence)</argsstring>
+        <name>NoteOff</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1a4a057c4960374fe85455e7088caa1f19">NoteOff</reimplements>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref></type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para><para>Sends note off event.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="51" column="30" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1a2b1014060f19da3788e099c6ae8962ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override <ref refid="class_midi_sequencer_1_1_step_entity" kindref="compound">StepEntity</ref></type>
+        <definition>override StepEntity MidiSequencer.MonoStep.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1a6699850c926004b57cf4f9d1a2195bff">Serialize</reimplements>
+        <briefdescription>
+<para><para>Serializes this instance of <ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref>.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="59" column="36" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1ae47c57a9874c8faf5387e5ca492768ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.MonoStep.Deserialize</definition>
+        <argsstring>(StepEntity step)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1acbdfb0ae6a59af24407c977fb611a80a">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_step_entity" kindref="compound">StepEntity</ref></type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para><para>Deserializes passed entity by applying it&apos;s values to this instance of <ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref>.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="69" column="30" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="69" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_mono_step_1a4b5f13e1de4c858b56855135db2f769e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref></type>
+        <definition>override ColorPair MidiSequencer.MonoStep.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <reimplements refid="class_midi_sequencer_1_1_step_1a59c1d8593adee8faa298e4a0963897e4">Setup</reimplements>
+        <briefdescription>
+<para><para>Creates a new <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref> of this type of step.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoStep.xaml.cs" line="23" column="38" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="23" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>type of <ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref> used by <ref refid="class_midi_sequencer_1_1_mono_sequence" kindref="compound">MonoSequence</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Step</label>
+        <link refid="class_midi_sequencer_1_1_step"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MidiSequencer.MonoStep</label>
+        <link refid="class_midi_sequencer_1_1_mono_step"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UserControl</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Step</label>
+        <link refid="class_midi_sequencer_1_1_step"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MidiSequencer.MonoStep</label>
+        <link refid="class_midi_sequencer_1_1_mono_step"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UserControl</label>
+      </node>
+    </collaborationgraph>
+    <location file="MidiSequencer/MonoStep.xaml.cs" line="10" column="19" bodyfile="MidiSequencer/MonoStep.xaml.cs" bodystart="11" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_midi_sequencer_1_1_step_1adbfd9c2f09471acd8754db54121e3998" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Button</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1a1665e6cb860c976387a7b3e557127c97" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Container</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1ae47c57a9874c8faf5387e5ca492768ed" prot="public" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>Deserialize</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1a645cbb61fd187fe55601e7a0788d2235" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Highlight</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1a9d34f3bf34793591f3cad70e7ee62874" prot="public" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>LoadMidi</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1abbecf94499df59da9f3a708b9b2e1551" prot="private" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>MidiEvent</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1aa4c5896b900bce3fa22dcabfaeaa9ebd" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>MonoStep</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1a91306e9775dab25f8f817220d5e28c8c" prot="public" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>NoteOff</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1a944e1e6bc6005a53f4e3046d7e09ec86" prot="public" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>NoteOn</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1a90f7043ac67cf35d802da1a30ec4a040" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>On</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1a2b1014060f19da3788e099c6ae8962ae" prot="public" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>Serialize</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1a458d59837c176daae1284d7102bec1d4" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>SetHighlight</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1ac5877fa0eb2f92071500097e015de735" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>SetNumber</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_step_1a4b5f13e1de4c858b56855135db2f769e" prot="protected" virt="virtual"><scope>MidiSequencer::MonoStep</scope><name>Setup</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1ab1aedded2707fd9b501a7b4f40b12250" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>SetWidth</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1ab6a731fc68a04c9c4ee55fd2298f50e9" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Step</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1ab4a29ea126ac68a9a900e68412b9565f" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Toggle</name></member>
+      <member refid="class_midi_sequencer_1_1_step_1a5465597ed6cb077adac244af1f2e633b" prot="protected" virt="non-virtual"><scope>MidiSequencer::MonoStep</scope><name>Toggle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

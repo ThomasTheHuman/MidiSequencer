@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MidiSequencer">
+
+    <Color x:Key="Blue">#2AB7CA</Color>
+    <SolidColorBrush x:Key="BlueBrush" Color="{StaticResource Blue}" />
+    <Color x:Key="DarkBlue">#17646F</Color>
+    <SolidColorBrush x:Key="DarkBlueBrush" Color="{StaticResource DarkBlue}" />
+
+    <Color x:Key="Red">#FE4A49</Color>
+    <SolidColorBrush x:Key="RedBrush" Color="{StaticResource Red}" />
+    <Color x:Key="DarkRed">#8B2928</Color>
+    <SolidColorBrush x:Key="DarkRedBrush" Color="{StaticResource DarkRed}" />
+
+    <Color x:Key="Yellow">#FED766</Color>
+    <SolidColorBrush x:Key="YellowBrush" Color="{StaticResource Yellow}" />
+    <Color x:Key="DarkYellow">#8B7638</Color>
+    <SolidColorBrush x:Key="DarkYellowBrush" Color="{StaticResource DarkYellow}" />
+
+    <Color x:Key="Platinum">#E8E3ED</Color>
+    <SolidColorBrush x:Key="PlatinumBrush" Color="{StaticResource Platinum}" />
+
+</ResourceDictionary>

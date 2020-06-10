@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_drum_step_entity_8cs" kind="file" language="C#">
+    <compoundname>DrumStepEntity.cs</compoundname>
+    <innerclass refid="class_midi_sequencer_1_1_drum_step_entity" prot="public">MidiSequencer::DrumStepEntity</innerclass>
+    <innernamespace refid="namespace_midi_sequencer">MidiSequencer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_midi_sequencer" kindref="compound">MidiSequencer</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4" refid="class_midi_sequencer_1_1_drum_step_entity" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_midi_sequencer_1_1_drum_step_entity" kindref="compound">DrumStepEntity</ref><sp/>:<sp/><ref refid="class_midi_sequencer_1_1_step_entity" kindref="compound">StepEntity</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="class_midi_sequencer_1_1_drum_step_entity_1af76eb7d9cba0294412a3bb2edc7f79e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_midi_sequencer_1_1_drum_step_entity_1af76eb7d9cba0294412a3bb2edc7f79e7" kindref="member">On</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="MidiSequencer/DrumStepEntity.cs"/>
+  </compounddef>
+</doxygen>

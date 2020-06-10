@@ -1,0 +1,116 @@
+\hypertarget{class_midi_sequencer_1_1_midi_out_interface}{}\doxysection{Midi\+Sequencer.\+Midi\+Out\+Interface Class Reference}
+\label{class_midi_sequencer_1_1_midi_out_interface}\index{MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}}
+
+
+Class used for interfacing with M\+I\+DI output devices  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Midi\+Out\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_midi_sequencer_1_1_midi_out_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface_ade3b6ef59efe88b2a6deadbfb1c37e3f}{Midi\+Out\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Sets channel to 1, because default 0 is reserved for all channels. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface_a13a322795f828f4ab9f0f4a0e383b9fa}{Connect\+To\+Device}} (int device\+Id)
+\begin{DoxyCompactList}\small\item\em Connects to device of specified id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface_a67f257587d6bddbe363477932f1f445e}{Send\+Event}} (Midi\+Event e)
+\begin{DoxyCompactList}\small\item\em Sends M\+I\+DI event to connected device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Midi\+Out\+Capabilities\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface_aac34c44533b6309f183690e549d19f66}{Get\+Midi\+Out\+Devices}} ()
+\begin{DoxyCompactList}\small\item\em Gets connected M\+I\+DI output devices \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class used for interfacing with M\+I\+DI output devices 
+
+
+
+Definition at line 10 of file Midi\+Out\+Interface.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_out_interface_ade3b6ef59efe88b2a6deadbfb1c37e3f}\label{class_midi_sequencer_1_1_midi_out_interface_ade3b6ef59efe88b2a6deadbfb1c37e3f}} 
+\index{MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}!MidiOutInterface@{MidiOutInterface}}
+\index{MidiOutInterface@{MidiOutInterface}!MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}}
+\doxysubsubsection{\texorpdfstring{MidiOutInterface()}{MidiOutInterface()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Midi\+Out\+Interface.\+Midi\+Out\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets channel to 1, because default 0 is reserved for all channels. 
+
+
+
+Definition at line 17 of file Midi\+Out\+Interface.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_out_interface_a13a322795f828f4ab9f0f4a0e383b9fa}\label{class_midi_sequencer_1_1_midi_out_interface_a13a322795f828f4ab9f0f4a0e383b9fa}} 
+\index{MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}!ConnectToDevice@{ConnectToDevice}}
+\index{ConnectToDevice@{ConnectToDevice}!MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}}
+\doxysubsubsection{\texorpdfstring{ConnectToDevice()}{ConnectToDevice()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Midi\+Out\+Interface.\+Connect\+To\+Device (\begin{DoxyParamCaption}\item[{int}]{device\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Connects to device of specified id. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_a540dbb7c761e4bae0df7400e861840e2}{Midi\+Sequencer.\+Midi\+Interface}}.
+
+
+
+Definition at line 23 of file Midi\+Out\+Interface.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_out_interface_aac34c44533b6309f183690e549d19f66}\label{class_midi_sequencer_1_1_midi_out_interface_aac34c44533b6309f183690e549d19f66}} 
+\index{MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}!GetMidiOutDevices@{GetMidiOutDevices}}
+\index{GetMidiOutDevices@{GetMidiOutDevices}!MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}}
+\doxysubsubsection{\texorpdfstring{GetMidiOutDevices()}{GetMidiOutDevices()}}
+{\footnotesize\ttfamily static Midi\+Out\+Capabilities \mbox{[}$\,$\mbox{]} Midi\+Sequencer.\+Midi\+Out\+Interface.\+Get\+Midi\+Out\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets connected M\+I\+DI output devices 
+
+\begin{DoxyReturn}{Returns}
+Array of Midi\+Out\+Capabilities
+\end{DoxyReturn}
+
+
+Definition at line 48 of file Midi\+Out\+Interface.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_out_interface_a67f257587d6bddbe363477932f1f445e}\label{class_midi_sequencer_1_1_midi_out_interface_a67f257587d6bddbe363477932f1f445e}} 
+\index{MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}!SendEvent@{SendEvent}}
+\index{SendEvent@{SendEvent}!MidiSequencer.MidiOutInterface@{MidiSequencer.MidiOutInterface}}
+\doxysubsubsection{\texorpdfstring{SendEvent()}{SendEvent()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Midi\+Out\+Interface.\+Send\+Event (\begin{DoxyParamCaption}\item[{Midi\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+Sends M\+I\+DI event to connected device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & M\+I\+DI event.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Midi\+Out\+Interface.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_midi_out_interface_8cs}{Midi\+Out\+Interface.\+cs}}\end{DoxyCompactItemize}

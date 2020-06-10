@@ -1,0 +1,194 @@
+\hypertarget{class_midi_sequencer_1_1_drum_sequence}{}\doxysection{Midi\+Sequencer.\+Drum\+Sequence Class Reference}
+\label{class_midi_sequencer_1_1_drum_sequence}\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+
+
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} type used for sequencing drums.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Drum\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_midi_sequencer_1_1_drum_sequence}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a506a000ae817f44dc40d90997fd232ca}{Drum\+Sequence}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} sequencer)
+\item 
+override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_afd5f4e7cf8ca240f9e1bb198a01d6807}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a579b244f973fd00509459140e469a8b7}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_aa0303c8fdfbd4c711c25ce9969564d55}{Reload\+Steps}} ()
+\begin{DoxyCompactList}\small\item\em Reloads steps if it\textquotesingle{}s count changed. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a324d39158646f6b3a46139e089798848}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_aa0c9c563b7e4f2e0146f7959670ba674}{Record\+Button\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles clicking record button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a476c7bd1e41140618e64a86a510cb4f0}{In\+Note}} = 60\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Input note, default C4 (60) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a93517bdbf344cc669370659ed4278fe9}{Out\+Note}} = 60\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Output note, default C4 (60) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} type used for sequencing drums. 
+
+
+
+Definition at line 12 of file Drum\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_a506a000ae817f44dc40d90997fd232ca}\label{class_midi_sequencer_1_1_drum_sequence_a506a000ae817f44dc40d90997fd232ca}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!DrumSequence@{DrumSequence}}
+\index{DrumSequence@{DrumSequence}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{DrumSequence()}{DrumSequence()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Drum\+Sequence.\+Drum\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}}}]{sequencer }\end{DoxyParamCaption})}
+
+
+
+
+
+
+
+Definition at line 15 of file Drum\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_a579b244f973fd00509459140e469a8b7}\label{class_midi_sequencer_1_1_drum_sequence_a579b244f973fd00509459140e469a8b7}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Drum\+Sequence.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 81 of file Drum\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_aa0c9c563b7e4f2e0146f7959670ba674}\label{class_midi_sequencer_1_1_drum_sequence_aa0c9c563b7e4f2e0146f7959670ba674}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!RecordButton\_Click@{RecordButton\_Click}}
+\index{RecordButton\_Click@{RecordButton\_Click}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{RecordButton\_Click()}{RecordButton\_Click()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Drum\+Sequence.\+Record\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handles clicking record button. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 58 of file Drum\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_aa0303c8fdfbd4c711c25ce9969564d55}\label{class_midi_sequencer_1_1_drum_sequence_aa0303c8fdfbd4c711c25ce9969564d55}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!ReloadSteps@{ReloadSteps}}
+\index{ReloadSteps@{ReloadSteps}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{ReloadSteps()}{ReloadSteps()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Drum\+Sequence.\+Reload\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reloads steps if it\textquotesingle{}s count changed. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 41 of file Drum\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_afd5f4e7cf8ca240f9e1bb198a01d6807}\label{class_midi_sequencer_1_1_drum_sequence_afd5f4e7cf8ca240f9e1bb198a01d6807}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} Midi\+Sequencer.\+Drum\+Sequence.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 64 of file Drum\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_a324d39158646f6b3a46139e089798848}\label{class_midi_sequencer_1_1_drum_sequence_a324d39158646f6b3a46139e089798848}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!Setup@{Setup}}
+\index{Setup@{Setup}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} Midi\+Sequencer.\+Drum\+Sequence.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 47 of file Drum\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_a476c7bd1e41140618e64a86a510cb4f0}\label{class_midi_sequencer_1_1_drum_sequence_a476c7bd1e41140618e64a86a510cb4f0}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!InNote@{InNote}}
+\index{InNote@{InNote}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{InNote}{InNote}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Drum\+Sequence.\+In\+Note = 60\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Input note, default C4 (60) 
+
+
+
+Definition at line 33 of file Drum\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_drum_sequence_a93517bdbf344cc669370659ed4278fe9}\label{class_midi_sequencer_1_1_drum_sequence_a93517bdbf344cc669370659ed4278fe9}} 
+\index{MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}!OutNote@{OutNote}}
+\index{OutNote@{OutNote}!MidiSequencer.DrumSequence@{MidiSequencer.DrumSequence}}
+\doxysubsubsection{\texorpdfstring{OutNote}{OutNote}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Drum\+Sequence.\+Out\+Note = 60\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Output note, default C4 (60) 
+
+
+
+Definition at line 38 of file Drum\+Sequence.\+xaml.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_drum_sequence_8xaml_8cs}{Drum\+Sequence.\+xaml.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{class_midi_sequencer_1_1_poly_step}{}\doxysection{Midi\+Sequencer.\+Poly\+Step Class Reference}
+\label{class_midi_sequencer_1_1_poly_step}\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+
+
+type of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}} used by \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence}{Poly\+Sequence}}.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Poly\+Step\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_midi_sequencer_1_1_poly_step}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a5af6585483a30bccd55c8aa33141a4d3}{Poly\+Step}} ()
+\begin{DoxyCompactList}\small\item\em Initializes control. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a92df748b9bfdb2044197695db8137473}{Load\+Midi}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} sequence)
+\begin{DoxyCompactList}\small\item\em Loads midi from event pool to step. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a79be3569dc113dded1bb673424ef3f70}{Note\+On}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} sequence)
+\begin{DoxyCompactList}\small\item\em Sends note on event. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_ae5eae0c2eadfcc062fb62a47c48ae2e4}{Note\+Off}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} sequence)
+\begin{DoxyCompactList}\small\item\em Sends note off event. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_midi_sequencer_1_1_step_entity}{Step\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a5cf103f5db95e950ba07907533f10eb7}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a1b1ff9ff2cca6146a0012a756394431c}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_step_entity}{Step\+Entity}} step)
+\begin{DoxyCompactList}\small\item\em Deserializes passed entity by applying it\textquotesingle{}s values to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} \mbox{\hyperlink{class_midi_sequencer_1_1_poly_step_a390ed8ba3f9bd850e387b1a4d15d907d}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+type of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}} used by \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence}{Poly\+Sequence}}. 
+
+
+
+Definition at line 11 of file Poly\+Step.\+xaml.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a5af6585483a30bccd55c8aa33141a4d3}\label{class_midi_sequencer_1_1_poly_step_a5af6585483a30bccd55c8aa33141a4d3}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!PolyStep@{PolyStep}}
+\index{PolyStep@{PolyStep}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{PolyStep()}{PolyStep()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Poly\+Step.\+Poly\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes control. 
+
+
+
+Definition at line 18 of file Poly\+Step.\+xaml.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a1b1ff9ff2cca6146a0012a756394431c}\label{class_midi_sequencer_1_1_poly_step_a1b1ff9ff2cca6146a0012a756394431c}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Step.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_step_entity}{Step\+Entity}}}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserializes passed entity by applying it\textquotesingle{}s values to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_acbdfb0ae6a59af24407c977fb611a80a}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 71 of file Poly\+Step.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a92df748b9bfdb2044197695db8137473}\label{class_midi_sequencer_1_1_poly_step_a92df748b9bfdb2044197695db8137473}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!LoadMidi@{LoadMidi}}
+\index{LoadMidi@{LoadMidi}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{LoadMidi()}{LoadMidi()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Step.\+Load\+Midi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}}]{sequence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads midi from event pool to step. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_a39abde6e3aba62e6d2d49986cc14ef9e}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 35 of file Poly\+Step.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_ae5eae0c2eadfcc062fb62a47c48ae2e4}\label{class_midi_sequencer_1_1_poly_step_ae5eae0c2eadfcc062fb62a47c48ae2e4}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!NoteOff@{NoteOff}}
+\index{NoteOff@{NoteOff}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{NoteOff()}{NoteOff()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Step.\+Note\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}}]{sequence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sends note off event. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_a4a057c4960374fe85455e7088caa1f19}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 52 of file Poly\+Step.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a79be3569dc113dded1bb673424ef3f70}\label{class_midi_sequencer_1_1_poly_step_a79be3569dc113dded1bb673424ef3f70}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!NoteOn@{NoteOn}}
+\index{NoteOn@{NoteOn}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{NoteOn()}{NoteOn()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Step.\+Note\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}}]{sequence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sends note on event. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_aaf39e8682ebc20443d572f496e7f565e}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 45 of file Poly\+Step.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a5cf103f5db95e950ba07907533f10eb7}\label{class_midi_sequencer_1_1_poly_step_a5cf103f5db95e950ba07907533f10eb7}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_midi_sequencer_1_1_step_entity}{Step\+Entity}} Midi\+Sequencer.\+Poly\+Step.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_a6699850c926004b57cf4f9d1a2195bff}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 61 of file Poly\+Step.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_step_a390ed8ba3f9bd850e387b1a4d15d907d}\label{class_midi_sequencer_1_1_poly_step_a390ed8ba3f9bd850e387b1a4d15d907d}} 
+\index{MidiSequencer.PolyStep@{MidiSequencer.PolyStep}!Setup@{Setup}}
+\index{Setup@{Setup}!MidiSequencer.PolyStep@{MidiSequencer.PolyStep}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} Midi\+Sequencer.\+Poly\+Step.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of step. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_step_a59c1d8593adee8faa298e4a0963897e4}{Midi\+Sequencer.\+Step}}.
+
+
+
+Definition at line 24 of file Poly\+Step.\+xaml.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_poly_step_8xaml_8cs}{Poly\+Step.\+xaml.\+cs}}\end{DoxyCompactItemize}

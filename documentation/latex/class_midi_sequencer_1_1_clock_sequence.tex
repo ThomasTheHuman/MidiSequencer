@@ -1,0 +1,220 @@
+\hypertarget{class_midi_sequencer_1_1_clock_sequence}{}\doxysection{Midi\+Sequencer.\+Clock\+Sequence Class Reference}
+\label{class_midi_sequencer_1_1_clock_sequence}\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+
+
+Clock sequence User\+Control  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Clock\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_midi_sequencer_1_1_clock_sequence}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_ada6b7ecfbbe90d6f292d374ff864fade}{Clock\+Sequence}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} sequencer)
+\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_ab83954ada13411dff79f55954dec24f5}{Reload\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Reloads timer, used when sequencer settings such as tempo changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a3c00d28a5118e0357e61bf31e45e9c35}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts sequencer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a7d2ebc2dc0a516f9a97185404208a2a7}{Pause}} ()
+\begin{DoxyCompactList}\small\item\em Pauses sequencer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a63d555dfb0177e08a4ca9f2604fb90d4}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops sequencer. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a89245cc412ba731a47b80f4f05171292}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a4809553c1d8e85e8c003bd1ba336ab3a}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a25b9c3a632e1fb851facd059c7630701}{Reload\+Steps}} ()
+\begin{DoxyCompactList}\small\item\em Reloads steps if it\textquotesingle{}s count changed. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_adf171aa503270a2b16c9cd1c0f9939c6}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a9b7ad39d6be2864ac031f64f16cc7673}{Record\+Button\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles clicking record button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clock sequence User\+Control 
+
+
+
+Definition at line 11 of file Clock\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_ada6b7ecfbbe90d6f292d374ff864fade}\label{class_midi_sequencer_1_1_clock_sequence_ada6b7ecfbbe90d6f292d374ff864fade}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!ClockSequence@{ClockSequence}}
+\index{ClockSequence@{ClockSequence}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{ClockSequence()}{ClockSequence()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Clock\+Sequence.\+Clock\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}}}]{sequencer }\end{DoxyParamCaption})}
+
+
+
+
+
+
+
+Definition at line 16 of file Clock\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a4809553c1d8e85e8c003bd1ba336ab3a}\label{class_midi_sequencer_1_1_clock_sequence_a4809553c1d8e85e8c003bd1ba336ab3a}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Clock\+Sequence.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 109 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a7d2ebc2dc0a516f9a97185404208a2a7}\label{class_midi_sequencer_1_1_clock_sequence_a7d2ebc2dc0a516f9a97185404208a2a7}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Pause@{Pause}}
+\index{Pause@{Pause}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Clock\+Sequence.\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pauses sequencer. 
+
+
+
+Definition at line 75 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a9b7ad39d6be2864ac031f64f16cc7673}\label{class_midi_sequencer_1_1_clock_sequence_a9b7ad39d6be2864ac031f64f16cc7673}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!RecordButton\_Click@{RecordButton\_Click}}
+\index{RecordButton\_Click@{RecordButton\_Click}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{RecordButton\_Click()}{RecordButton\_Click()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Clock\+Sequence.\+Record\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handles clicking record button. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 89 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a25b9c3a632e1fb851facd059c7630701}\label{class_midi_sequencer_1_1_clock_sequence_a25b9c3a632e1fb851facd059c7630701}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!ReloadSteps@{ReloadSteps}}
+\index{ReloadSteps@{ReloadSteps}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{ReloadSteps()}{ReloadSteps()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Clock\+Sequence.\+Reload\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reloads steps if it\textquotesingle{}s count changed. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 40 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_ab83954ada13411dff79f55954dec24f5}\label{class_midi_sequencer_1_1_clock_sequence_ab83954ada13411dff79f55954dec24f5}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!ReloadTimer@{ReloadTimer}}
+\index{ReloadTimer@{ReloadTimer}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{ReloadTimer()}{ReloadTimer()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Clock\+Sequence.\+Reload\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reloads timer, used when sequencer settings such as tempo changed. 
+
+
+
+Definition at line 59 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a89245cc412ba731a47b80f4f05171292}\label{class_midi_sequencer_1_1_clock_sequence_a89245cc412ba731a47b80f4f05171292}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} Midi\+Sequencer.\+Clock\+Sequence.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 95 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_adf171aa503270a2b16c9cd1c0f9939c6}\label{class_midi_sequencer_1_1_clock_sequence_adf171aa503270a2b16c9cd1c0f9939c6}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Setup@{Setup}}
+\index{Setup@{Setup}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} Midi\+Sequencer.\+Clock\+Sequence.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 46 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a3c00d28a5118e0357e61bf31e45e9c35}\label{class_midi_sequencer_1_1_clock_sequence_a3c00d28a5118e0357e61bf31e45e9c35}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Start@{Start}}
+\index{Start@{Start}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Clock\+Sequence.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts sequencer. 
+
+
+
+Definition at line 67 of file Clock\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_clock_sequence_a63d555dfb0177e08a4ca9f2604fb90d4}\label{class_midi_sequencer_1_1_clock_sequence_a63d555dfb0177e08a4ca9f2604fb90d4}} 
+\index{MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}!Stop@{Stop}}
+\index{Stop@{Stop}!MidiSequencer.ClockSequence@{MidiSequencer.ClockSequence}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Clock\+Sequence.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops sequencer. 
+
+
+
+Definition at line 83 of file Clock\+Sequence.\+xaml.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_clock_sequence_8xaml_8cs}{Clock\+Sequence.\+xaml.\+cs}}\end{DoxyCompactItemize}

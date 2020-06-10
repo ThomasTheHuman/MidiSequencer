@@ -1,0 +1,158 @@
+.TH "MidiSequencer.Sequencer" 3 "Wed Jun 10 2020" "MIDI Sequencer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MidiSequencer.Sequencer \- UserControl that acts as a container for sequences\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits UserControl\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSequencer\fP ()"
+.br
+.RI "Initializes component and renders clock sequence\&. "
+.ti -1c
+.RI "void \fBDeserialize\fP (\fBSequencerEntity\fP entity)"
+.br
+.RI "Applies values from passed entity\&. Used for loading data from file\&. "
+.ti -1c
+.RI "\fBSequence\fP \fBAddSequence< T >\fP ()"
+.br
+.RI "Adds sequence to sequencer\&. "
+.ti -1c
+.RI "void \fBRemoveSequence\fP (\fBSequence\fP sequence)"
+.br
+.RI "Removes sequence from sequencer\&. "
+.ti -1c
+.RI "void \fBSave\fP (string fileName)"
+.br
+.RI "Serializes and saves project to XML file\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBSequence\fP > \fBSequences\fP = new List<\fBSequence\fP>()\fC [get]\fP"
+.br
+.RI "List of sequences in sequence pool\&. "
+.ti -1c
+.RI "\fBSequence\fP \fBClockSequence\fP\fC [get]\fP"
+.br
+.RI "Holds sequencer's clock sequence\&. "
+.ti -1c
+.RI "int \fBBpm\fP = 140\fC [get, set]\fP"
+.br
+.RI "Holds tempo of sequencer in beats per minute\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+UserControl that acts as a container for sequences\&. 
+
+
+.PP
+Definition at line 14 of file Sequencer\&.xaml\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MidiSequencer\&.Sequencer\&.Sequencer ()"
+
+.PP
+Initializes component and renders clock sequence\&. 
+.PP
+Definition at line 19 of file Sequencer\&.xaml\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSequence\fP MidiSequencer\&.Sequencer\&.AddSequence< T > ()"
+
+.PP
+Adds sequence to sequencer\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP Type of sequence\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Newly created sequence\&.
+.RE
+.PP
+
+.PP
+\fBType Constraints\fP
+.TP
+\fIT\fP : \fISequence\fP
+.PP
+Definition at line 70 of file Sequencer\&.xaml\&.cs\&.
+.SS "void MidiSequencer\&.Sequencer\&.Deserialize (\fBSequencerEntity\fP entity)"
+
+.PP
+Applies values from passed entity\&. Used for loading data from file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIentity\fP Object holding values to apply\&.
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fICorruptedFileException\fP Thrown when passed object is incomplete or null\&.
+.RE
+.PP
+
+.PP
+Definition at line 45 of file Sequencer\&.xaml\&.cs\&.
+.SS "void MidiSequencer\&.Sequencer\&.RemoveSequence (\fBSequence\fP sequence)"
+
+.PP
+Removes sequence from sequencer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsequence\fP \fBSequence\fP to remove\&.
+.RE
+.PP
+
+.PP
+Definition at line 84 of file Sequencer\&.xaml\&.cs\&.
+.SS "void MidiSequencer\&.Sequencer\&.Save (string fileName)"
+
+.PP
+Serializes and saves project to XML file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP Name of file to create/overwrite\&.
+.RE
+.PP
+
+.PP
+Definition at line 94 of file Sequencer\&.xaml\&.cs\&.
+.SH "Property Documentation"
+.PP 
+.SS "int MidiSequencer\&.Sequencer\&.Bpm = 140\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Holds tempo of sequencer in beats per minute\&. 
+.PP
+Definition at line 38 of file Sequencer\&.xaml\&.cs\&.
+.SS "\fBSequence\fP MidiSequencer\&.Sequencer\&.ClockSequence\fC [get]\fP"
+
+.PP
+Holds sequencer's clock sequence\&. 
+.PP
+Definition at line 33 of file Sequencer\&.xaml\&.cs\&.
+.SS "List<\fBSequence\fP> MidiSequencer\&.Sequencer\&.Sequences = new List<\fBSequence\fP>()\fC [get]\fP"
+
+.PP
+List of sequences in sequence pool\&. 
+.PP
+Definition at line 28 of file Sequencer\&.xaml\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MIDI Sequencer from the source code\&.

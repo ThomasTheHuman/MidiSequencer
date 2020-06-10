@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_clock_sequence" kind="class" language="C#" prot="public">
+    <compoundname>MidiSequencer::ClockSequence</compoundname>
+    <basecompoundref refid="class_midi_sequencer_1_1_sequence" prot="public" virt="non-virtual">MidiSequencer.Sequence</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_clock_sequence_1aac147c72d42439a3e36bc3e90326ebd0" prot="private" static="no" mutable="no">
+        <type>readonly SequenceTimer</type>
+        <definition>readonly SequenceTimer MidiSequencer.ClockSequence._timer</definition>
+        <argsstring></argsstring>
+        <name>_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="13" column="40" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1ada6b7ecfbbe90d6f292d374ff864fade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MidiSequencer.ClockSequence.ClockSequence</definition>
+        <argsstring>(Sequencer sequencer)</argsstring>
+        <name>ClockSequence</name>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequencer" kindref="compound">Sequencer</ref></type>
+          <declname>sequencer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="16" column="16" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="16" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1ab83954ada13411dff79f55954dec24f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.ClockSequence.ReloadTimer</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadTimer</name>
+        <briefdescription>
+<para>Reloads timer, used when sequencer settings such as tempo changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="59" column="21" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a3c00d28a5118e0357e61bf31e45e9c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.ClockSequence.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Starts sequencer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="67" column="21" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a7d2ebc2dc0a516f9a97185404208a2a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.ClockSequence.Pause</definition>
+        <argsstring>()</argsstring>
+        <name>Pause</name>
+        <briefdescription>
+<para>Pauses sequencer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="75" column="21" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a63d555dfb0177e08a4ca9f2604fb90d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.ClockSequence.Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stops sequencer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="83" column="21" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a89245cc412ba731a47b80f4f05171292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override <ref refid="class_midi_sequencer_1_1_sequence_entity" kindref="compound">SequenceEntity</ref></type>
+        <definition>override SequenceEntity MidiSequencer.ClockSequence.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_midi_sequencer_1_1_sequence_1a823cbb8d236929d1a3c1a4c2a2e1ee8c">Serialize</reimplements>
+        <briefdescription>
+<para><para>Serializes this instance of <ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref>.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="95" column="40" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="95" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a4809553c1d8e85e8c003bd1ba336ab3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.ClockSequence.Deserialize</definition>
+        <argsstring>(SequenceEntity entity)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="class_midi_sequencer_1_1_sequence_1a2d6f0729c213c4ab08bbb6f708e10674">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence_entity" kindref="compound">SequenceEntity</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para><para>Deserializes sequence by applying values from passed serialized entity to this instance of <ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref>.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="109" column="30" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="109" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a25b9c3a632e1fb851facd059c7630701" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.ClockSequence.ReloadSteps</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadSteps</name>
+        <reimplements refid="class_midi_sequencer_1_1_sequence_1a7be92fbe069cea77a41bc50ddf8a2ecb">ReloadSteps</reimplements>
+        <briefdescription>
+<para><para>Reloads steps if it&apos;s count changed.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="40" column="33" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1adf171aa503270a2b16c9cd1c0f9939c6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref></type>
+        <definition>override ColorPair MidiSequencer.ClockSequence.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <reimplements refid="class_midi_sequencer_1_1_sequence_1acb0ec7085ea0aa171e598ce312f0e81d">Setup</reimplements>
+        <briefdescription>
+<para><para>Creates a new <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref> of this type of sequence.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="46" column="38" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_clock_sequence_1a9b7ad39d6be2864ac031f64f16cc7673" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MidiSequencer.ClockSequence.RecordButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>RecordButton_Click</name>
+        <reimplements refid="class_midi_sequencer_1_1_sequence_1a922b999e438960c61fa57c0364628078">RecordButton_Click</reimplements>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para><para>Handles clicking record button.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/ClockSequence.xaml.cs" line="89" column="33" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clock sequence UserControl </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Sequence</label>
+        <link refid="class_midi_sequencer_1_1_sequence"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MidiSequencer.ClockSequence</label>
+        <link refid="class_midi_sequencer_1_1_clock_sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UserControl</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Sequence</label>
+        <link refid="class_midi_sequencer_1_1_sequence"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Input</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OnButton</edgelabel>
+          <edgelabel>HotRecButton</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Sequencer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Output</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MidiSequencer.ToggleWithLabel</label>
+        <link refid="class_midi_sequencer_1_1_toggle_with_label"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MidiSequencer.MidiInInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_in_interface"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MidiSequencer.ClockSequence</label>
+        <link refid="class_midi_sequencer_1_1_clock_sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MidiSequencer.Sequencer</label>
+        <link refid="class_midi_sequencer_1_1_sequencer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MidiInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_interface"/>
+      </node>
+      <node id="3">
+        <label>UserControl</label>
+      </node>
+      <node id="8">
+        <label>MidiSequencer.MidiOutInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_out_interface"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MidiSequencer/ClockSequence.xaml.cs" line="11" column="19" bodyfile="MidiSequencer/ClockSequence.xaml.cs" bodystart="12" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1aac147c72d42439a3e36bc3e90326ebd0" prot="private" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>_timer</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1c5220d8276b3edd3bddce1ce0236591" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Bars</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a2c2996eef8c9ae401ea0e5daeb2729e9" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Beats</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1ada6b7ecfbbe90d6f292d374ff864fade" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>ClockSequence</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ab23dfab0870a54af00dacb749bc3cc8d" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>DeleteButton</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a4809553c1d8e85e8c003bd1ba336ab3a" prot="public" virt="virtual"><scope>MidiSequencer::ClockSequence</scope><name>Deserialize</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1b133a1d86b2d4cf49c467683a9ab70e" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>EditButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a8fde1942754f03cf52e8539cf2ef1706" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Gate</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a721b30c3d584b91dcc5bd52d7af5baea" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>HotRec</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a6e650d9fd781337d2daf3e94053e6402" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>HotRecButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a867d15e30f9a8af2afcd9fd2ace6a623" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Input</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1adfd78368c42036fb37cddd33996baeb5" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>On</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a276ab4613ba8e7b6f3927c3f7d8cfd87" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>OnButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a45016fc3d96be0d667f3129ee6861fbd" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Output</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a7d2ebc2dc0a516f9a97185404208a2a7" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Pause</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a99fabab63f5c1ffffb0c03d5b0719a83" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>RecordButton</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a9b7ad39d6be2864ac031f64f16cc7673" prot="protected" virt="virtual"><scope>MidiSequencer::ClockSequence</scope><name>RecordButton_Click</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ac0c39bfed3251ae864932ac6a462047c" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Recording</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a25b9c3a632e1fb851facd059c7630701" prot="protected" virt="virtual"><scope>MidiSequencer::ClockSequence</scope><name>ReloadSteps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a32a70583962f2d02f747d5107c81f3aa" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>ReloadSteps&lt; T &gt;</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1ab83954ada13411dff79f55954dec24f5" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>ReloadTimer</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ad8bab2cd74f5fa1b270c520968fb63de" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Rest</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a37f0a2dc987e43a6a25d15228f3cc918" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>RestButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a4ef6dcfd12e1ed4fa01775a04daa3937" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Sequence</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a2952951e35c3752bbdbea1e2567d5b80" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Sequencer</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a89245cc412ba731a47b80f4f05171292" prot="public" virt="virtual"><scope>MidiSequencer::ClockSequence</scope><name>Serialize</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1a6c34b01724de9a9b551984a39e4a19" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>SetHighlight</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a74eb9ec2cc109a3c7d54a29aa63edc42" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>SetSteps</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1adf171aa503270a2b16c9cd1c0f9939c6" prot="protected" virt="virtual"><scope>MidiSequencer::ClockSequence</scope><name>Setup</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a55d16a9d0ccd0758b608c5e5974146d5" prot="protected" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>StackPanel</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a3c00d28a5118e0357e61bf31e45e9c35" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Start</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a5accae623ec22da47738fb514a8335ce" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Steps</name></member>
+      <member refid="class_midi_sequencer_1_1_clock_sequence_1a63d555dfb0177e08a4ca9f2604fb90d4" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>Stop</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a530c17163a5e071c12c24c2e7c2d9530" prot="public" virt="non-virtual"><scope>MidiSequencer::ClockSequence</scope><name>StopRecording</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

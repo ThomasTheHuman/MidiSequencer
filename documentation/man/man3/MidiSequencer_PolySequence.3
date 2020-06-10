@@ -1,0 +1,104 @@
+.TH "MidiSequencer.PolySequence" 3 "Wed Jun 10 2020" "MIDI Sequencer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MidiSequencer.PolySequence \- \fBSequence\fP type used for polyphonic instruments\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBMidiSequencer\&.Sequence\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPolySequence\fP (\fBSequencer\fP sequencer)"
+.br
+.ti -1c
+.RI "override \fBSequenceEntity\fP \fBSerialize\fP ()"
+.br
+.RI "Serializes this instance of \fBSequence\fP\&. "
+.ti -1c
+.RI "override void \fBDeserialize\fP (\fBSequenceEntity\fP entity)"
+.br
+.RI "Deserializes sequence by applying values from passed serialized entity to this instance of \fBSequence\fP\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBReloadSteps\fP ()"
+.br
+.RI "Reloads steps if it's count changed\&. "
+.ti -1c
+.RI "override \fBColorPair\fP \fBSetup\fP ()"
+.br
+.RI "Creates a new \fBColorPair\fP of this type of sequence\&. "
+.ti -1c
+.RI "override async void \fBRecordButton_Click\fP (object sender, RoutedEventArgs e)"
+.br
+.RI "Handles clicking record button\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBSequence\fP type used for polyphonic instruments\&. 
+
+
+.PP
+Definition at line 11 of file PolySequence\&.xaml\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MidiSequencer\&.PolySequence\&.PolySequence (\fBSequencer\fP sequencer)"
+
+.PP
+
+.PP
+Definition at line 14 of file PolySequence\&.xaml\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override void MidiSequencer\&.PolySequence\&.Deserialize (\fBSequenceEntity\fP entity)\fC [virtual]\fP"
+
+.PP
+Deserializes sequence by applying values from passed serialized entity to this instance of \fBSequence\fP\&. 
+.PP
+Implements \fBMidiSequencer\&.Sequence\fP\&.
+.PP
+Definition at line 90 of file PolySequence\&.xaml\&.cs\&.
+.SS "override async void MidiSequencer\&.PolySequence\&.RecordButton_Click (object sender, RoutedEventArgs e)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Handles clicking record button\&. 
+.PP
+Implements \fBMidiSequencer\&.Sequence\fP\&.
+.PP
+Definition at line 39 of file PolySequence\&.xaml\&.cs\&.
+.SS "override void MidiSequencer\&.PolySequence\&.ReloadSteps ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reloads steps if it's count changed\&. 
+.PP
+Implements \fBMidiSequencer\&.Sequence\fP\&.
+.PP
+Definition at line 22 of file PolySequence\&.xaml\&.cs\&.
+.SS "override \fBSequenceEntity\fP MidiSequencer\&.PolySequence\&.Serialize ()\fC [virtual]\fP"
+
+.PP
+Serializes this instance of \fBSequence\fP\&. 
+.PP
+Implements \fBMidiSequencer\&.Sequence\fP\&.
+.PP
+Definition at line 75 of file PolySequence\&.xaml\&.cs\&.
+.SS "override \fBColorPair\fP MidiSequencer\&.PolySequence\&.Setup ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Creates a new \fBColorPair\fP of this type of sequence\&. 
+.PP
+Implements \fBMidiSequencer\&.Sequence\fP\&.
+.PP
+Definition at line 28 of file PolySequence\&.xaml\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MIDI Sequencer from the source code\&.

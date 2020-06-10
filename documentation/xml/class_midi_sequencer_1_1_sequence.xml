@@ -1,0 +1,802 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_sequence" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>MidiSequencer::Sequence</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UserControl</basecompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_clock_sequence" prot="public" virt="non-virtual">MidiSequencer.ClockSequence</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_drum_sequence" prot="public" virt="non-virtual">MidiSequencer.DrumSequence</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_mono_sequence" prot="public" virt="non-virtual">MidiSequencer.MonoSequence</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_poly_sequence" prot="public" virt="non-virtual">MidiSequencer.PolySequence</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1aa7df60eea00c669fd851bb72634ff4cf" prot="private" static="no" mutable="no">
+        <type>readonly Border</type>
+        <definition>readonly Border MidiSequencer.Sequence._highlightBorder</definition>
+        <argsstring></argsstring>
+        <name>_highlightBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="15" column="33" bodyfile="MidiSequencer/Sequence.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a58bb5520dac90af4182fa4fa4af0bf11" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_sequence_1a55d16a9d0ccd0758b608c5e5974146d5" kindref="member">StackPanel</ref></type>
+        <definition>readonly StackPanel MidiSequencer.Sequence._stepsContainer</definition>
+        <argsstring></argsstring>
+        <name>_stepsContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="17" column="37" bodyfile="MidiSequencer/Sequence.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a1b133a1d86b2d4cf49c467683a9ab70e" prot="protected" static="no" mutable="no">
+        <type>readonly Button</type>
+        <definition>readonly Button MidiSequencer.Sequence.EditButton</definition>
+        <argsstring></argsstring>
+        <name>EditButton</name>
+        <briefdescription>
+<para>Button that highlights sequence and opens it&apos;s toolbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="22" column="35" bodyfile="MidiSequencer/Sequence.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a6e650d9fd781337d2daf3e94053e6402" prot="protected" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_toggle_with_label" kindref="compound">ToggleWithLabel</ref></type>
+        <definition>readonly ToggleWithLabel MidiSequencer.Sequence.HotRecButton</definition>
+        <argsstring></argsstring>
+        <name>HotRecButton</name>
+        <briefdescription>
+<para>Toggle button that when turned on records all inputs while sequence is playing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="27" column="44" bodyfile="MidiSequencer/Sequence.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a276ab4613ba8e7b6f3927c3f7d8cfd87" prot="protected" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_toggle_with_label" kindref="compound">ToggleWithLabel</ref></type>
+        <definition>readonly ToggleWithLabel MidiSequencer.Sequence.OnButton</definition>
+        <argsstring></argsstring>
+        <name>OnButton</name>
+        <briefdescription>
+<para>Toggle button that when turned off disables all MIDI output of sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="37" column="44" bodyfile="MidiSequencer/Sequence.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a99fabab63f5c1ffffb0c03d5b0719a83" prot="protected" static="no" mutable="no">
+        <type>readonly Button</type>
+        <definition>readonly Button MidiSequencer.Sequence.RecordButton</definition>
+        <argsstring></argsstring>
+        <name>RecordButton</name>
+        <briefdescription>
+<para>Button used to turn on recording. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="47" column="35" bodyfile="MidiSequencer/Sequence.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a37f0a2dc987e43a6a25d15228f3cc918" prot="protected" static="no" mutable="no">
+        <type>readonly Button</type>
+        <definition>readonly Button MidiSequencer.Sequence.RestButton</definition>
+        <argsstring></argsstring>
+        <name>RestButton</name>
+        <briefdescription>
+<para>Rest button used for recording sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="52" column="35" bodyfile="MidiSequencer/Sequence.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a2952951e35c3752bbdbea1e2567d5b80" prot="protected" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_sequencer" kindref="compound">Sequencer</ref></type>
+        <definition>readonly Sequencer MidiSequencer.Sequence.Sequencer</definition>
+        <argsstring></argsstring>
+        <name>Sequencer</name>
+        <briefdescription>
+<para><ref refid="class_midi_sequencer_1_1_sequencer" kindref="compound">Sequencer</ref> that hold this instance of <ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="57" column="38" bodyfile="MidiSequencer/Sequence.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a55d16a9d0ccd0758b608c5e5974146d5" prot="protected" static="no" mutable="no">
+        <type>readonly VirtualizingStackPanel</type>
+        <definition>readonly VirtualizingStackPanel MidiSequencer.Sequence.StackPanel</definition>
+        <argsstring></argsstring>
+        <name>StackPanel</name>
+        <briefdescription>
+<para>UI container holding elements of sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="62" column="51" bodyfile="MidiSequencer/Sequence.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1ab23dfab0870a54af00dacb749bc3cc8d" prot="protected" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MidiSequencer.Sequence.DeleteButton</definition>
+        <argsstring></argsstring>
+        <name>DeleteButton</name>
+        <briefdescription>
+<para>Button that removes sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="67" column="26" bodyfile="MidiSequencer/Sequence.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1ac0c39bfed3251ae864932ac6a462047c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MidiSequencer.Sequence.Recording</definition>
+        <argsstring></argsstring>
+        <name>Recording</name>
+        <briefdescription>
+<para>Field telling if recording is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="72" column="24" bodyfile="MidiSequencer/Sequence.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1ad8bab2cd74f5fa1b270c520968fb63de" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MidiSequencer.Sequence.Rest</definition>
+        <argsstring></argsstring>
+        <name>Rest</name>
+        <briefdescription>
+<para>Field telling if rest button was clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="77" column="24" bodyfile="MidiSequencer/Sequence.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a867d15e30f9a8af2afcd9fd2ace6a623" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_midi_in_interface" kindref="compound">MidiInInterface</ref></type>
+        <definition>readonly MidiInInterface MidiSequencer.Sequence.Input</definition>
+        <argsstring></argsstring>
+        <name>Input</name>
+        <initializer>= new <ref refid="class_midi_sequencer_1_1_midi_in_interface" kindref="compound">MidiInInterface</ref>()</initializer>
+        <briefdescription>
+<para>Used to interact with MIDI input devices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="32" column="41" bodyfile="MidiSequencer/Sequence.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a45016fc3d96be0d667f3129ee6861fbd" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="class_midi_sequencer_1_1_midi_out_interface" kindref="compound">MidiOutInterface</ref></type>
+        <definition>readonly MidiOutInterface MidiSequencer.Sequence.Output</definition>
+        <argsstring></argsstring>
+        <name>Output</name>
+        <initializer>= new <ref refid="class_midi_sequencer_1_1_midi_out_interface" kindref="compound">MidiOutInterface</ref>()</initializer>
+        <briefdescription>
+<para>Used to interact with MIDI output devices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="42" column="42" bodyfile="MidiSequencer/Sequence.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1a721b30c3d584b91dcc5bd52d7af5baea" prot="public" static="no" mutable="no">
+        <type>bool?</type>
+        <definition>bool? MidiSequencer.Sequence.HotRec</definition>
+        <argsstring></argsstring>
+        <name>HotRec</name>
+        <initializer>=&gt; HotRecButton.IsChecked</initializer>
+        <briefdescription>
+<para>Property telling if hot recording is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="178" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_sequence_1adfd78368c42036fb37cddd33996baeb5" prot="public" static="no" mutable="no">
+        <type>bool?</type>
+        <definition>bool? MidiSequencer.Sequence.On</definition>
+        <argsstring></argsstring>
+        <name>On</name>
+        <initializer>=&gt; OnButton.IsChecked</initializer>
+        <briefdescription>
+<para>Property telling if sequence is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="183" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_midi_sequencer_1_1_sequence_1a8fde1942754f03cf52e8539cf2ef1706" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int MidiSequencer.Sequence.Gate</definition>
+        <argsstring></argsstring>
+        <name>Gate</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>Gate time of midi events in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="188" column="20" bodyfile="MidiSequencer/Sequence.cs" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="property" id="class_midi_sequencer_1_1_sequence_1a2c2996eef8c9ae401ea0e5daeb2729e9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int MidiSequencer.Sequence.Beats</definition>
+        <argsstring></argsstring>
+        <name>Beats</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>Amount of steps in a single bar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="193" column="20" bodyfile="MidiSequencer/Sequence.cs" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="property" id="class_midi_sequencer_1_1_sequence_1a1c5220d8276b3edd3bddce1ce0236591" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int MidiSequencer.Sequence.Bars</definition>
+        <argsstring></argsstring>
+        <name>Bars</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Amount of bars in sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="198" column="20" bodyfile="MidiSequencer/Sequence.cs" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="property" id="class_midi_sequencer_1_1_sequence_1a5accae623ec22da47738fb514a8335ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref> &gt;</type>
+        <definition>List&lt;Step&gt; MidiSequencer.Sequence.Steps</definition>
+        <argsstring></argsstring>
+        <name>Steps</name>
+        <initializer>= new List&lt;<ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref>&gt;()</initializer>
+        <briefdescription>
+<para>List of sequence&apos;s steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="203" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="property" id="class_midi_sequencer_1_1_sequence_1abf6ab1a40efb3d371541c7ab706097d3" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref></type>
+        <definition>ColorPair MidiSequencer.Sequence.ColorPair</definition>
+        <argsstring></argsstring>
+        <name>ColorPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="205" column="27" bodyfile="MidiSequencer/Sequence.cs" bodystart="205" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a4ef6dcfd12e1ed4fa01775a04daa3937" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MidiSequencer.Sequence.Sequence</definition>
+        <argsstring>(Sequencer sequencer)</argsstring>
+        <name>Sequence</name>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequencer" kindref="compound">Sequencer</ref></type>
+          <declname>sequencer</declname>
+        </param>
+        <briefdescription>
+<para>Initializes sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequencer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_midi_sequencer_1_1_sequencer" kindref="compound">Sequencer</ref> to which newly created sequence belongs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="83" column="19" bodyfile="MidiSequencer/Sequence.cs" bodystart="83" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a922b999e438960c61fa57c0364628078" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void MidiSequencer.Sequence.RecordButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>RecordButton_Click</name>
+        <reimplementedby refid="class_midi_sequencer_1_1_poly_sequence_1af68a9e172a265c9cd1651c1b82a32e8c">RecordButton_Click</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_mono_sequence_1af25225cea3aba811163bbd7182937bee">RecordButton_Click</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_drum_sequence_1aa0c9c563b7e4f2e0146f7959670ba674">RecordButton_Click</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_clock_sequence_1a9b7ad39d6be2864ac031f64f16cc7673">RecordButton_Click</reimplementedby>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles clicking record button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="222" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a7be92fbe069cea77a41bc50ddf8a2ecb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void MidiSequencer.Sequence.ReloadSteps</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadSteps</name>
+        <reimplementedby refid="class_midi_sequencer_1_1_poly_sequence_1a6ba24c279d57df33bac519a35f406b92">ReloadSteps</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_mono_sequence_1a9d60cb2cb9354443833377689f01e387">ReloadSteps</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_clock_sequence_1a25b9c3a632e1fb851facd059c7630701">ReloadSteps</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_drum_sequence_1aa0303c8fdfbd4c711c25ce9969564d55">ReloadSteps</reimplementedby>
+        <briefdescription>
+<para>Reloads steps if it&apos;s count changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="253" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a32a70583962f2d02f747d5107c81f3aa" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.ReloadSteps&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadSteps&lt; T &gt;</name>
+        <briefdescription>
+<para>Reloads steps if it&apos;s count changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="258" column="19" bodyfile="MidiSequencer/Sequence.cs" bodystart="258" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1acb0ec7085ea0aa171e598ce312f0e81d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref></type>
+        <definition>abstract ColorPair MidiSequencer.Sequence.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <reimplementedby refid="class_midi_sequencer_1_1_poly_sequence_1ad2a1f5c79385a41aab24c84edbd2ad65">Setup</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_mono_sequence_1a9b41480d5171807d4182a2b5a654e5de">Setup</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_clock_sequence_1adf171aa503270a2b16c9cd1c0f9939c6">Setup</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_drum_sequence_1a324d39158646f6b3a46139e089798848">Setup</reimplementedby>
+        <briefdescription>
+<para>Creates a new <ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref> of this type of sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_midi_sequencer_1_1_color_pair" kindref="compound">ColorPair</ref> of this type of sequence.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="316" column="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1ae7eb1de8e47211bc7319941f75ce57e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MidiSequencer.Sequence.SequenceLength</definition>
+        <argsstring>()</argsstring>
+        <name>SequenceLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="207" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1ab5e082ef82700b76c771181dec082bfd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.RestButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>RestButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="212" column="22" bodyfile="MidiSequencer/Sequence.cs" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a21db3404710808a437c0730eb85f8079" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.OnEdit</definition>
+        <argsstring>(object o, RoutedEventArgs e)</argsstring>
+        <name>OnEdit</name>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="233" column="22" bodyfile="MidiSequencer/Sequence.cs" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1aa7600477400529588ba02cd606ef72fd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.OnDelete</definition>
+        <argsstring>(object o, RoutedEventArgs e)</argsstring>
+        <name>OnDelete</name>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="239" column="22" bodyfile="MidiSequencer/Sequence.cs" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1ae4a7aac126d6385b3f2e15d81fd14462" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.RenderSteps</definition>
+        <argsstring>()</argsstring>
+        <name>RenderSteps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="244" column="22" bodyfile="MidiSequencer/Sequence.cs" bodystart="244" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a1a6c34b01724de9a9b551984a39e4a19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.SetHighlight</definition>
+        <argsstring>(bool highlighted)</argsstring>
+        <name>SetHighlight</name>
+        <param>
+          <type>bool</type>
+          <declname>highlighted</declname>
+        </param>
+        <briefdescription>
+<para>Sets border highlight of sequence either on or off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highlighted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired state of highlight.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="228" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a74eb9ec2cc109a3c7d54a29aa63edc42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.SetSteps</definition>
+        <argsstring>(int beats, int bars)</argsstring>
+        <name>SetSteps</name>
+        <param>
+          <type>int</type>
+          <declname>beats</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+<para>Sets amount of steps in sequence and reloads. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of steps in a bar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of bars in a sequence.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="296" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="296" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a530c17163a5e071c12c24c2e7c2d9530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Sequence.StopRecording</definition>
+        <argsstring>()</argsstring>
+        <name>StopRecording</name>
+        <briefdescription>
+<para>Stops recording. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="307" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="307" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a823cbb8d236929d1a3c1a4c2a2e1ee8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract <ref refid="class_midi_sequencer_1_1_sequence_entity" kindref="compound">SequenceEntity</ref></type>
+        <definition>abstract SequenceEntity MidiSequencer.Sequence.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplementedby refid="class_midi_sequencer_1_1_drum_sequence_1afd5f4e7cf8ca240f9e1bb198a01d6807">Serialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_mono_sequence_1a810d3ae325766b1895b74613f8453f4b">Serialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_poly_sequence_1ad4b828b24e109f24a4921b8cd1ed950b">Serialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_clock_sequence_1a89245cc412ba731a47b80f4f05171292">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes this instance of <ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Serialized sequence</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="322" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_sequence_1a2d6f0729c213c4ab08bbb6f708e10674" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void MidiSequencer.Sequence.Deserialize</definition>
+        <argsstring>(SequenceEntity entity)</argsstring>
+        <name>Deserialize</name>
+        <reimplementedby refid="class_midi_sequencer_1_1_drum_sequence_1a579b244f973fd00509459140e469a8b7">Deserialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_mono_sequence_1a36db29d71ba5ecdef4b49d8d39408eeb">Deserialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_poly_sequence_1ad893cc03b811b723ab0eeff574280bfb">Deserialize</reimplementedby>
+        <reimplementedby refid="class_midi_sequencer_1_1_clock_sequence_1a4809553c1d8e85e8c003bd1ba336ab3a">Deserialize</reimplementedby>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence_entity" kindref="compound">SequenceEntity</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes sequence by applying values from passed serialized entity to this instance of <ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serialized sequence</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Sequence.cs" line="328" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UserControl that is a base class for sequences. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MidiSequencer.Sequence</label>
+        <link refid="class_midi_sequencer_1_1_sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MidiSequencer.PolySequence</label>
+        <link refid="class_midi_sequencer_1_1_poly_sequence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MidiSequencer.ClockSequence</label>
+        <link refid="class_midi_sequencer_1_1_clock_sequence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MidiSequencer.MonoSequence</label>
+        <link refid="class_midi_sequencer_1_1_mono_sequence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+      <node id="4">
+        <label>MidiSequencer.DrumSequence</label>
+        <link refid="class_midi_sequencer_1_1_drum_sequence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MidiSequencer.Sequence</label>
+        <link refid="class_midi_sequencer_1_1_sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Input</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>OnButton</edgelabel>
+          <edgelabel>HotRecButton</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Sequencer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Output</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MidiSequencer.ToggleWithLabel</label>
+        <link refid="class_midi_sequencer_1_1_toggle_with_label"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MidiSequencer.MidiInInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_in_interface"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MidiSequencer.Sequencer</label>
+        <link refid="class_midi_sequencer_1_1_sequencer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MidiInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_interface"/>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+      <node id="7">
+        <label>MidiSequencer.MidiOutInterface</label>
+        <link refid="class_midi_sequencer_1_1_midi_out_interface"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MidiSequencer/Sequence.cs" line="13" column="21" bodyfile="MidiSequencer/Sequence.cs" bodystart="14" bodyend="329"/>
+    <listofallmembers>
+      <member refid="class_midi_sequencer_1_1_sequence_1aa7df60eea00c669fd851bb72634ff4cf" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>_highlightBorder</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a58bb5520dac90af4182fa4fa4af0bf11" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>_stepsContainer</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1c5220d8276b3edd3bddce1ce0236591" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Bars</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a2c2996eef8c9ae401ea0e5daeb2729e9" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Beats</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1abf6ab1a40efb3d371541c7ab706097d3" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>ColorPair</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ab23dfab0870a54af00dacb749bc3cc8d" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>DeleteButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a2d6f0729c213c4ab08bbb6f708e10674" prot="public" virt="pure-virtual"><scope>MidiSequencer::Sequence</scope><name>Deserialize</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1b133a1d86b2d4cf49c467683a9ab70e" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>EditButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a8fde1942754f03cf52e8539cf2ef1706" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Gate</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a721b30c3d584b91dcc5bd52d7af5baea" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>HotRec</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a6e650d9fd781337d2daf3e94053e6402" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>HotRecButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a867d15e30f9a8af2afcd9fd2ace6a623" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Input</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1adfd78368c42036fb37cddd33996baeb5" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>On</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a276ab4613ba8e7b6f3927c3f7d8cfd87" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>OnButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1aa7600477400529588ba02cd606ef72fd" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>OnDelete</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a21db3404710808a437c0730eb85f8079" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>OnEdit</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a45016fc3d96be0d667f3129ee6861fbd" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Output</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a99fabab63f5c1ffffb0c03d5b0719a83" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>RecordButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a922b999e438960c61fa57c0364628078" prot="protected" virt="pure-virtual"><scope>MidiSequencer::Sequence</scope><name>RecordButton_Click</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ac0c39bfed3251ae864932ac6a462047c" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Recording</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a7be92fbe069cea77a41bc50ddf8a2ecb" prot="protected" virt="pure-virtual"><scope>MidiSequencer::Sequence</scope><name>ReloadSteps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a32a70583962f2d02f747d5107c81f3aa" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>ReloadSteps&lt; T &gt;</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ae4a7aac126d6385b3f2e15d81fd14462" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>RenderSteps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ad8bab2cd74f5fa1b270c520968fb63de" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Rest</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a37f0a2dc987e43a6a25d15228f3cc918" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>RestButton</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ab5e082ef82700b76c771181dec082bfd" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>RestButton_Click</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a4ef6dcfd12e1ed4fa01775a04daa3937" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Sequence</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1ae7eb1de8e47211bc7319941f75ce57e1" prot="private" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>SequenceLength</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a2952951e35c3752bbdbea1e2567d5b80" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Sequencer</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a823cbb8d236929d1a3c1a4c2a2e1ee8c" prot="public" virt="pure-virtual"><scope>MidiSequencer::Sequence</scope><name>Serialize</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a1a6c34b01724de9a9b551984a39e4a19" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>SetHighlight</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a74eb9ec2cc109a3c7d54a29aa63edc42" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>SetSteps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1acb0ec7085ea0aa171e598ce312f0e81d" prot="protected" virt="pure-virtual"><scope>MidiSequencer::Sequence</scope><name>Setup</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a55d16a9d0ccd0758b608c5e5974146d5" prot="protected" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>StackPanel</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a5accae623ec22da47738fb514a8335ce" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>Steps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_1a530c17163a5e071c12c24c2e7c2d9530" prot="public" virt="non-virtual"><scope>MidiSequencer::Sequence</scope><name>StopRecording</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

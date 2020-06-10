@@ -1,0 +1,202 @@
+\hypertarget{class_midi_sequencer_1_1_sequencer}{}\doxysection{Midi\+Sequencer.\+Sequencer Class Reference}
+\label{class_midi_sequencer_1_1_sequencer}\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+
+
+User\+Control that acts as a container for sequences.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Sequencer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_midi_sequencer_1_1_sequencer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a29a5ae76d0408569de87478177bc50ac}{Sequencer}} ()
+\begin{DoxyCompactList}\small\item\em Initializes component and renders clock sequence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a34db5a13c6b776d5034a91e8e8df1516}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_entity}{Sequencer\+Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Applies values from passed entity. Used for loading data from file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a3e35c3ea4e6f32fe87ffc83d84faddd0}{Add\+Sequence$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Adds sequence to sequencer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a76cc41adedf1cc5ccab3f7e4a2f02b4b}{Remove\+Sequence}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} sequence)
+\begin{DoxyCompactList}\small\item\em Removes sequence from sequencer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a1e4f12336210b1c620ba77b07cd42dc5}{Save}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Serializes and saves project to X\+ML file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} $>$ \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a5980eddafe9f1d5e3890af2bf3706af0}{Sequences}} = new List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of sequences in sequence pool. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_acec79e7732d32c2afa624e9f8cd95138}{Clock\+Sequence}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Holds sequencer\textquotesingle{}s clock sequence. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_a88ca8dd47f1e2c86814e26fe39939d3d}{Bpm}} = 140\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Holds tempo of sequencer in beats per minute. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+User\+Control that acts as a container for sequences. 
+
+
+
+Definition at line 14 of file Sequencer.\+xaml.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a29a5ae76d0408569de87478177bc50ac}\label{class_midi_sequencer_1_1_sequencer_a29a5ae76d0408569de87478177bc50ac}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!Sequencer@{Sequencer}}
+\index{Sequencer@{Sequencer}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{Sequencer()}{Sequencer()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Sequencer.\+Sequencer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes component and renders clock sequence. 
+
+
+
+Definition at line 19 of file Sequencer.\+xaml.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a3e35c3ea4e6f32fe87ffc83d84faddd0}\label{class_midi_sequencer_1_1_sequencer_a3e35c3ea4e6f32fe87ffc83d84faddd0}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!AddSequence$<$ T $>$@{AddSequence$<$ T $>$}}
+\index{AddSequence$<$ T $>$@{AddSequence$<$ T $>$}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{AddSequence$<$ T $>$()}{AddSequence< T >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} Midi\+Sequencer.\+Sequencer.\+Add\+Sequence$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds sequence to sequencer. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of sequence.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Newly created sequence.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Sequence}]\end{description}
+\end{Desc}
+
+
+Definition at line 70 of file Sequencer.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a34db5a13c6b776d5034a91e8e8df1516}\label{class_midi_sequencer_1_1_sequencer_a34db5a13c6b776d5034a91e8e8df1516}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequencer.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer_entity}{Sequencer\+Entity}}}]{entity }\end{DoxyParamCaption})}
+
+
+
+Applies values from passed entity. Used for loading data from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Object holding values to apply.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Corrupted\+File\+Exception} & Thrown when passed object is incomplete or null.\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 45 of file Sequencer.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a76cc41adedf1cc5ccab3f7e4a2f02b4b}\label{class_midi_sequencer_1_1_sequencer_a76cc41adedf1cc5ccab3f7e4a2f02b4b}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!RemoveSequence@{RemoveSequence}}
+\index{RemoveSequence@{RemoveSequence}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{RemoveSequence()}{RemoveSequence()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequencer.\+Remove\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}}]{sequence }\end{DoxyParamCaption})}
+
+
+
+Removes sequence from sequencer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} to remove.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Sequencer.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a1e4f12336210b1c620ba77b07cd42dc5}\label{class_midi_sequencer_1_1_sequencer_a1e4f12336210b1c620ba77b07cd42dc5}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!Save@{Save}}
+\index{Save@{Save}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequencer.\+Save (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Serializes and saves project to X\+ML file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of file to create/overwrite.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file Sequencer.\+xaml.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a88ca8dd47f1e2c86814e26fe39939d3d}\label{class_midi_sequencer_1_1_sequencer_a88ca8dd47f1e2c86814e26fe39939d3d}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!Bpm@{Bpm}}
+\index{Bpm@{Bpm}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{Bpm}{Bpm}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Sequencer.\+Bpm = 140\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holds tempo of sequencer in beats per minute. 
+
+
+
+Definition at line 38 of file Sequencer.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_acec79e7732d32c2afa624e9f8cd95138}\label{class_midi_sequencer_1_1_sequencer_acec79e7732d32c2afa624e9f8cd95138}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!ClockSequence@{ClockSequence}}
+\index{ClockSequence@{ClockSequence}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{ClockSequence}{ClockSequence}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} Midi\+Sequencer.\+Sequencer.\+Clock\+Sequence\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Holds sequencer\textquotesingle{}s clock sequence. 
+
+
+
+Definition at line 33 of file Sequencer.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequencer_a5980eddafe9f1d5e3890af2bf3706af0}\label{class_midi_sequencer_1_1_sequencer_a5980eddafe9f1d5e3890af2bf3706af0}} 
+\index{MidiSequencer.Sequencer@{MidiSequencer.Sequencer}!Sequences@{Sequences}}
+\index{Sequences@{Sequences}!MidiSequencer.Sequencer@{MidiSequencer.Sequencer}}
+\doxysubsubsection{\texorpdfstring{Sequences}{Sequences}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}$>$ Midi\+Sequencer.\+Sequencer.\+Sequences = new List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+List of sequences in sequence pool. 
+
+
+
+Definition at line 28 of file Sequencer.\+xaml.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_sequencer_8xaml_8cs}{Sequencer.\+xaml.\+cs}}\end{DoxyCompactItemize}

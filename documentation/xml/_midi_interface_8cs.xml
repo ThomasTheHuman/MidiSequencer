@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_midi_interface_8cs" kind="file" language="C#">
+    <compoundname>MidiInterface.cs</compoundname>
+    <innerclass refid="class_midi_sequencer_1_1_midi_interface" prot="public">MidiSequencer::MidiInterface</innerclass>
+    <innernamespace refid="namespace_midi_sequencer">MidiSequencer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_midi_sequencer" kindref="compound">MidiSequencer</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_midi_sequencer_1_1_midi_interface" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_midi_sequencer_1_1_midi_interface" kindref="compound">MidiInterface</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">?<sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" kindref="member">Device</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_midi_sequencer_1_1_midi_interface_1a518e4b4e71516f77d1444abcc3a553d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a518e4b4e71516f77d1444abcc3a553d0" kindref="member">Channel</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_midi_sequencer_1_1_midi_interface_1a540dbb7c761e4bae0df7400e861840e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a540dbb7c761e4bae0df7400e861840e2" kindref="member">ConnectToDevice</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceId);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_midi_sequencer_1_1_midi_interface_1aacfc717dc3c48ae76e768559430a01a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_midi_sequencer_1_1_midi_interface_entity" kindref="compound">MidiInterfaceEntity</ref><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1aacfc717dc3c48ae76e768559430a01a9" kindref="member">Serialize</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_midi_sequencer_1_1_midi_interface_entity" kindref="compound">MidiInterfaceEntity</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a518e4b4e71516f77d1444abcc3a553d0" kindref="member">Channel</ref><sp/>=<sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a518e4b4e71516f77d1444abcc3a553d0" kindref="member">Channel</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" kindref="member">Device</ref><sp/>=<sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" kindref="member">Device</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_midi_sequencer_1_1_midi_interface_1ab1cbf32a326d88a32a1486e4be4ce537" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">?<sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1ab1cbf32a326d88a32a1486e4be4ce537" kindref="member">GetDevice</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_midi_sequencer_1_1_midi_interface_1a8043e3650523e0ff43f9c795ba27c649" kindref="member">Device</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="MidiSequencer/MidiInterface.cs"/>
+  </compounddef>
+</doxygen>

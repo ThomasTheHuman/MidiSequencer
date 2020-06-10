@@ -1,0 +1,117 @@
+.TH "MidiSequencer.DrumStep" 3 "Wed Jun 10 2020" "MIDI Sequencer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MidiSequencer.DrumStep \- type of \fBStep\fP used by \fBDrumSequence\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBMidiSequencer\&.Step\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDrumStep\fP ()"
+.br
+.RI "Initializes control\&. "
+.ti -1c
+.RI "override void \fBLoadMidi\fP (\fBSequence\fP sequence)"
+.br
+.RI "Loads midi from event pool to step\&. "
+.ti -1c
+.RI "override void \fBNoteOn\fP (\fBSequence\fP sequence)"
+.br
+.RI "Sends note on event\&. "
+.ti -1c
+.RI "override void \fBNoteOff\fP (\fBSequence\fP sequence)"
+.br
+.RI "Sends note off event\&. "
+.ti -1c
+.RI "override \fBStepEntity\fP \fBSerialize\fP ()"
+.br
+.RI "Serializes this instance of \fBStep\fP\&. "
+.ti -1c
+.RI "override void \fBDeserialize\fP (\fBStepEntity\fP step)"
+.br
+.RI "Deserializes passed entity by applying it's values to this instance of \fBStep\fP\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override \fBColorPair\fP \fBSetup\fP ()"
+.br
+.RI "Creates a new \fBColorPair\fP of this type of step\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+type of \fBStep\fP used by \fBDrumSequence\fP\&. 
+
+
+.PP
+Definition at line 10 of file DrumStep\&.xaml\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MidiSequencer\&.DrumStep\&.DrumStep ()"
+
+.PP
+Initializes control\&. 
+.PP
+Definition at line 15 of file DrumStep\&.xaml\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override void MidiSequencer\&.DrumStep\&.Deserialize (\fBStepEntity\fP step)\fC [virtual]\fP"
+
+.PP
+Deserializes passed entity by applying it's values to this instance of \fBStep\fP\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 69 of file DrumStep\&.xaml\&.cs\&.
+.SS "override void MidiSequencer\&.DrumStep\&.LoadMidi (\fBSequence\fP sequence)\fC [virtual]\fP"
+
+.PP
+Loads midi from event pool to step\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 32 of file DrumStep\&.xaml\&.cs\&.
+.SS "override void MidiSequencer\&.DrumStep\&.NoteOff (\fBSequence\fP sequence)\fC [virtual]\fP"
+
+.PP
+Sends note off event\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 51 of file DrumStep\&.xaml\&.cs\&.
+.SS "override void MidiSequencer\&.DrumStep\&.NoteOn (\fBSequence\fP sequence)\fC [virtual]\fP"
+
+.PP
+Sends note on event\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 42 of file DrumStep\&.xaml\&.cs\&.
+.SS "override \fBStepEntity\fP MidiSequencer\&.DrumStep\&.Serialize ()\fC [virtual]\fP"
+
+.PP
+Serializes this instance of \fBStep\fP\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 60 of file DrumStep\&.xaml\&.cs\&.
+.SS "override \fBColorPair\fP MidiSequencer\&.DrumStep\&.Setup ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Creates a new \fBColorPair\fP of this type of step\&. 
+.PP
+Implements \fBMidiSequencer\&.Step\fP\&.
+.PP
+Definition at line 21 of file DrumStep\&.xaml\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MIDI Sequencer from the source code\&.

@@ -1,0 +1,156 @@
+\hypertarget{class_midi_sequencer_1_1_poly_sequence}{}\doxysection{Midi\+Sequencer.\+Poly\+Sequence Class Reference}
+\label{class_midi_sequencer_1_1_poly_sequence}\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+
+
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} type used for polyphonic instruments.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Poly\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_midi_sequencer_1_1_poly_sequence}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_a1e40dadc14c836b7c27b958f43d4ed93}{Poly\+Sequence}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} sequencer)
+\item 
+override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad4b828b24e109f24a4921b8cd1ed950b}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad893cc03b811b723ab0eeff574280bfb}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_a6ba24c279d57df33bac519a35f406b92}{Reload\+Steps}} ()
+\begin{DoxyCompactList}\small\item\em Reloads steps if it\textquotesingle{}s count changed. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad2a1f5c79385a41aab24c84edbd2ad65}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. \end{DoxyCompactList}\item 
+override async void \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_af68a9e172a265c9cd1651c1b82a32e8c}{Record\+Button\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles clicking record button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}} type used for polyphonic instruments. 
+
+
+
+Definition at line 11 of file Poly\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_a1e40dadc14c836b7c27b958f43d4ed93}\label{class_midi_sequencer_1_1_poly_sequence_a1e40dadc14c836b7c27b958f43d4ed93}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!PolySequence@{PolySequence}}
+\index{PolySequence@{PolySequence}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{PolySequence()}{PolySequence()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Poly\+Sequence.\+Poly\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}}}]{sequencer }\end{DoxyParamCaption})}
+
+
+
+
+
+
+
+Definition at line 14 of file Poly\+Sequence.\+xaml.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_ad893cc03b811b723ab0eeff574280bfb}\label{class_midi_sequencer_1_1_poly_sequence_ad893cc03b811b723ab0eeff574280bfb}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Sequence.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 90 of file Poly\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_af68a9e172a265c9cd1651c1b82a32e8c}\label{class_midi_sequencer_1_1_poly_sequence_af68a9e172a265c9cd1651c1b82a32e8c}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!RecordButton\_Click@{RecordButton\_Click}}
+\index{RecordButton\_Click@{RecordButton\_Click}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{RecordButton\_Click()}{RecordButton\_Click()}}
+{\footnotesize\ttfamily override async void Midi\+Sequencer.\+Poly\+Sequence.\+Record\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handles clicking record button. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 39 of file Poly\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_a6ba24c279d57df33bac519a35f406b92}\label{class_midi_sequencer_1_1_poly_sequence_a6ba24c279d57df33bac519a35f406b92}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!ReloadSteps@{ReloadSteps}}
+\index{ReloadSteps@{ReloadSteps}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{ReloadSteps()}{ReloadSteps()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Poly\+Sequence.\+Reload\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reloads steps if it\textquotesingle{}s count changed. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 22 of file Poly\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_ad4b828b24e109f24a4921b8cd1ed950b}\label{class_midi_sequencer_1_1_poly_sequence_ad4b828b24e109f24a4921b8cd1ed950b}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} Midi\+Sequencer.\+Poly\+Sequence.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 75 of file Poly\+Sequence.\+xaml.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_poly_sequence_ad2a1f5c79385a41aab24c84edbd2ad65}\label{class_midi_sequencer_1_1_poly_sequence_ad2a1f5c79385a41aab24c84edbd2ad65}} 
+\index{MidiSequencer.PolySequence@{MidiSequencer.PolySequence}!Setup@{Setup}}
+\index{Setup@{Setup}!MidiSequencer.PolySequence@{MidiSequencer.PolySequence}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} Midi\+Sequencer.\+Poly\+Sequence.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}{Midi\+Sequencer.\+Sequence}}.
+
+
+
+Definition at line 28 of file Poly\+Sequence.\+xaml.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_poly_sequence_8xaml_8cs}{Poly\+Sequence.\+xaml.\+cs}}\end{DoxyCompactItemize}

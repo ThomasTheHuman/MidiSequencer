@@ -1,0 +1,541 @@
+\hypertarget{class_midi_sequencer_1_1_sequence}{}\doxysection{Midi\+Sequencer.\+Sequence Class Reference}
+\label{class_midi_sequencer_1_1_sequence}\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+
+
+User\+Control that is a base class for sequences.  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.131979cm]{class_midi_sequencer_1_1_sequence}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a1a6c34b01724de9a9b551984a39e4a19}{Set\+Highlight}} (bool highlighted)
+\begin{DoxyCompactList}\small\item\em Sets border highlight of sequence either on or off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a74eb9ec2cc109a3c7d54a29aa63edc42}{Set\+Steps}} (int beats, int bars)
+\begin{DoxyCompactList}\small\item\em Sets amount of steps in sequence and reloads. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a530c17163a5e071c12c24c2e7c2d9530}{Stop\+Recording}} ()
+\begin{DoxyCompactList}\small\item\em Stops recording. \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}{Deserialize}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface}{Midi\+In\+Interface}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a867d15e30f9a8af2afcd9fd2ace6a623}{Input}} = new \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface}{Midi\+In\+Interface}}()
+\begin{DoxyCompactList}\small\item\em Used to interact with M\+I\+DI input devices. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface}{Midi\+Out\+Interface}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a45016fc3d96be0d667f3129ee6861fbd}{Output}} = new \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface}{Midi\+Out\+Interface}}()
+\begin{DoxyCompactList}\small\item\em Used to interact with M\+I\+DI output devices. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a721b30c3d584b91dcc5bd52d7af5baea}{Hot\+Rec}} =$>$ Hot\+Rec\+Button.\+Is\+Checked
+\begin{DoxyCompactList}\small\item\em Property telling if hot recording is enabled. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_adfd78368c42036fb37cddd33996baeb5}{On}} =$>$ On\+Button.\+Is\+Checked
+\begin{DoxyCompactList}\small\item\em Property telling if sequence is enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a4ef6dcfd12e1ed4fa01775a04daa3937}{Sequence}} (\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} sequencer)
+\begin{DoxyCompactList}\small\item\em Initializes sequence. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}{Record\+Button\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Handles clicking record button. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}{Reload\+Steps}} ()
+\begin{DoxyCompactList}\small\item\em Reloads steps if it\textquotesingle{}s count changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a32a70583962f2d02f747d5107c81f3aa}{Reload\+Steps$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Reloads steps if it\textquotesingle{}s count changed. \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Button \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a1b133a1d86b2d4cf49c467683a9ab70e}{Edit\+Button}}
+\begin{DoxyCompactList}\small\item\em Button that highlights sequence and opens it\textquotesingle{}s toolbar. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_midi_sequencer_1_1_toggle_with_label}{Toggle\+With\+Label}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a6e650d9fd781337d2daf3e94053e6402}{Hot\+Rec\+Button}}
+\begin{DoxyCompactList}\small\item\em Toggle button that when turned on records all inputs while sequence is playing. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_midi_sequencer_1_1_toggle_with_label}{Toggle\+With\+Label}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a276ab4613ba8e7b6f3927c3f7d8cfd87}{On\+Button}}
+\begin{DoxyCompactList}\small\item\em Toggle button that when turned off disables all M\+I\+DI output of sequence. \end{DoxyCompactList}\item 
+readonly Button \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a99fabab63f5c1ffffb0c03d5b0719a83}{Record\+Button}}
+\begin{DoxyCompactList}\small\item\em Button used to turn on recording. \end{DoxyCompactList}\item 
+readonly Button \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a37f0a2dc987e43a6a25d15228f3cc918}{Rest\+Button}}
+\begin{DoxyCompactList}\small\item\em Rest button used for recording sequence. \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2952951e35c3752bbdbea1e2567d5b80}{Sequencer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} that hold this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+readonly Virtualizing\+Stack\+Panel \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a55d16a9d0ccd0758b608c5e5974146d5}{Stack\+Panel}}
+\begin{DoxyCompactList}\small\item\em UI container holding elements of sequence. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_ab23dfab0870a54af00dacb749bc3cc8d}{Delete\+Button}}
+\begin{DoxyCompactList}\small\item\em Button that removes sequence. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_ac0c39bfed3251ae864932ac6a462047c}{Recording}}
+\begin{DoxyCompactList}\small\item\em Field telling if recording is enabled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_ad8bab2cd74f5fa1b270c520968fb63de}{Rest}}
+\begin{DoxyCompactList}\small\item\em Field telling if rest button was clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a8fde1942754f03cf52e8539cf2ef1706}{Gate}} = 100\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gate time of midi events in milliseconds. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a2c2996eef8c9ae401ea0e5daeb2729e9}{Beats}} = 4\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of steps in a single bar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a1c5220d8276b3edd3bddce1ce0236591}{Bars}} = 2\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of bars in sequence. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}} $>$ \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a5accae623ec22da47738fb514a8335ce}{Steps}} = new List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of sequence\textquotesingle{}s steps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+User\+Control that is a base class for sequences. 
+
+
+
+Definition at line 13 of file Sequence.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a4ef6dcfd12e1ed4fa01775a04daa3937}\label{class_midi_sequencer_1_1_sequence_a4ef6dcfd12e1ed4fa01775a04daa3937}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}}
+{\footnotesize\ttfamily Midi\+Sequencer.\+Sequence.\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}}}]{sequencer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencer} & \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} to which newly created sequence belongs.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Sequence.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}\label{class_midi_sequencer_1_1_sequence_a2d6f0729c213c4ab08bbb6f708e10674}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily abstract void Midi\+Sequencer.\+Sequence.\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deserializes sequence by applying values from passed serialized entity to this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Serialized sequence\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a4809553c1d8e85e8c003bd1ba336ab3a}{Midi\+Sequencer.\+Clock\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad893cc03b811b723ab0eeff574280bfb}{Midi\+Sequencer.\+Poly\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_mono_sequence_a36db29d71ba5ecdef4b49d8d39408eeb}{Midi\+Sequencer.\+Mono\+Sequence}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a579b244f973fd00509459140e469a8b7}{Midi\+Sequencer.\+Drum\+Sequence}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}\label{class_midi_sequencer_1_1_sequence_a922b999e438960c61fa57c0364628078}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!RecordButton\_Click@{RecordButton\_Click}}
+\index{RecordButton\_Click@{RecordButton\_Click}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{RecordButton\_Click()}{RecordButton\_Click()}}
+{\footnotesize\ttfamily abstract void Midi\+Sequencer.\+Sequence.\+Record\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Handles clicking record button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a9b7ad39d6be2864ac031f64f16cc7673}{Midi\+Sequencer.\+Clock\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_aa0c9c563b7e4f2e0146f7959670ba674}{Midi\+Sequencer.\+Drum\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_mono_sequence_af25225cea3aba811163bbd7182937bee}{Midi\+Sequencer.\+Mono\+Sequence}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_af68a9e172a265c9cd1651c1b82a32e8c}{Midi\+Sequencer.\+Poly\+Sequence}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}\label{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!ReloadSteps@{ReloadSteps}}
+\index{ReloadSteps@{ReloadSteps}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{ReloadSteps()}{ReloadSteps()}}
+{\footnotesize\ttfamily abstract void Midi\+Sequencer.\+Sequence.\+Reload\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Reloads steps if it\textquotesingle{}s count changed. 
+
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_aa0303c8fdfbd4c711c25ce9969564d55}{Midi\+Sequencer.\+Drum\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a25b9c3a632e1fb851facd059c7630701}{Midi\+Sequencer.\+Clock\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_mono_sequence_a9d60cb2cb9354443833377689f01e387}{Midi\+Sequencer.\+Mono\+Sequence}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_a6ba24c279d57df33bac519a35f406b92}{Midi\+Sequencer.\+Poly\+Sequence}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a32a70583962f2d02f747d5107c81f3aa}\label{class_midi_sequencer_1_1_sequence_a32a70583962f2d02f747d5107c81f3aa}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!ReloadSteps$<$ T $>$@{ReloadSteps$<$ T $>$}}
+\index{ReloadSteps$<$ T $>$@{ReloadSteps$<$ T $>$}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{ReloadSteps$<$ T $>$()}{ReloadSteps< T >()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_a7be92fbe069cea77a41bc50ddf8a2ecb}{Midi\+Sequencer.\+Sequence.\+Reload\+Steps}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reloads steps if it\textquotesingle{}s count changed. 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+Definition at line 258 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}\label{class_midi_sequencer_1_1_sequence_a823cbb8d236929d1a3c1a4c2a2e1ee8c}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_midi_sequencer_1_1_sequence_entity}{Sequence\+Entity}} Midi\+Sequencer.\+Sequence.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Serializes this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+\begin{DoxyReturn}{Returns}
+Serialized sequence
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_a89245cc412ba731a47b80f4f05171292}{Midi\+Sequencer.\+Clock\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad4b828b24e109f24a4921b8cd1ed950b}{Midi\+Sequencer.\+Poly\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_mono_sequence_a810d3ae325766b1895b74613f8453f4b}{Midi\+Sequencer.\+Mono\+Sequence}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_afd5f4e7cf8ca240f9e1bb198a01d6807}{Midi\+Sequencer.\+Drum\+Sequence}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a1a6c34b01724de9a9b551984a39e4a19}\label{class_midi_sequencer_1_1_sequence_a1a6c34b01724de9a9b551984a39e4a19}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!SetHighlight@{SetHighlight}}
+\index{SetHighlight@{SetHighlight}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{SetHighlight()}{SetHighlight()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequence.\+Set\+Highlight (\begin{DoxyParamCaption}\item[{bool}]{highlighted }\end{DoxyParamCaption})}
+
+
+
+Sets border highlight of sequence either on or off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em highlighted} & Desired state of highlight.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 228 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a74eb9ec2cc109a3c7d54a29aa63edc42}\label{class_midi_sequencer_1_1_sequence_a74eb9ec2cc109a3c7d54a29aa63edc42}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!SetSteps@{SetSteps}}
+\index{SetSteps@{SetSteps}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{SetSteps()}{SetSteps()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequence.\+Set\+Steps (\begin{DoxyParamCaption}\item[{int}]{beats,  }\item[{int}]{bars }\end{DoxyParamCaption})}
+
+
+
+Sets amount of steps in sequence and reloads. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em beats} & Amount of steps in a bar.\\
+\hline
+{\em bars} & Amount of bars in a sequence.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 296 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}\label{class_midi_sequencer_1_1_sequence_acb0ec7085ea0aa171e598ce312f0e81d}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Setup@{Setup}}
+\index{Setup@{Setup}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} Midi\+Sequencer.\+Sequence.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Creates a new \mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_midi_sequencer_1_1_color_pair}{Color\+Pair}} of this type of sequence.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_midi_sequencer_1_1_drum_sequence_a324d39158646f6b3a46139e089798848}{Midi\+Sequencer.\+Drum\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_clock_sequence_adf171aa503270a2b16c9cd1c0f9939c6}{Midi\+Sequencer.\+Clock\+Sequence}}, \mbox{\hyperlink{class_midi_sequencer_1_1_mono_sequence_a9b41480d5171807d4182a2b5a654e5de}{Midi\+Sequencer.\+Mono\+Sequence}}, and \mbox{\hyperlink{class_midi_sequencer_1_1_poly_sequence_ad2a1f5c79385a41aab24c84edbd2ad65}{Midi\+Sequencer.\+Poly\+Sequence}}.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a530c17163a5e071c12c24c2e7c2d9530}\label{class_midi_sequencer_1_1_sequence_a530c17163a5e071c12c24c2e7c2d9530}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!StopRecording@{StopRecording}}
+\index{StopRecording@{StopRecording}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{StopRecording()}{StopRecording()}}
+{\footnotesize\ttfamily void Midi\+Sequencer.\+Sequence.\+Stop\+Recording (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops recording. 
+
+
+
+Definition at line 307 of file Sequence.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_ab23dfab0870a54af00dacb749bc3cc8d}\label{class_midi_sequencer_1_1_sequence_ab23dfab0870a54af00dacb749bc3cc8d}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!DeleteButton@{DeleteButton}}
+\index{DeleteButton@{DeleteButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{DeleteButton}{DeleteButton}}
+{\footnotesize\ttfamily Button Midi\+Sequencer.\+Sequence.\+Delete\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Button that removes sequence. 
+
+
+
+Definition at line 67 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a1b133a1d86b2d4cf49c467683a9ab70e}\label{class_midi_sequencer_1_1_sequence_a1b133a1d86b2d4cf49c467683a9ab70e}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!EditButton@{EditButton}}
+\index{EditButton@{EditButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{EditButton}{EditButton}}
+{\footnotesize\ttfamily readonly Button Midi\+Sequencer.\+Sequence.\+Edit\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Button that highlights sequence and opens it\textquotesingle{}s toolbar. 
+
+
+
+Definition at line 22 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a721b30c3d584b91dcc5bd52d7af5baea}\label{class_midi_sequencer_1_1_sequence_a721b30c3d584b91dcc5bd52d7af5baea}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!HotRec@{HotRec}}
+\index{HotRec@{HotRec}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{HotRec}{HotRec}}
+{\footnotesize\ttfamily bool? Midi\+Sequencer.\+Sequence.\+Hot\+Rec =$>$ Hot\+Rec\+Button.\+Is\+Checked}
+
+
+
+Property telling if hot recording is enabled. 
+
+
+
+Definition at line 178 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a6e650d9fd781337d2daf3e94053e6402}\label{class_midi_sequencer_1_1_sequence_a6e650d9fd781337d2daf3e94053e6402}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!HotRecButton@{HotRecButton}}
+\index{HotRecButton@{HotRecButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{HotRecButton}{HotRecButton}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_midi_sequencer_1_1_toggle_with_label}{Toggle\+With\+Label}} Midi\+Sequencer.\+Sequence.\+Hot\+Rec\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Toggle button that when turned on records all inputs while sequence is playing. 
+
+
+
+Definition at line 27 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a867d15e30f9a8af2afcd9fd2ace6a623}\label{class_midi_sequencer_1_1_sequence_a867d15e30f9a8af2afcd9fd2ace6a623}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Input@{Input}}
+\index{Input@{Input}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Input}{Input}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface}{Midi\+In\+Interface}} Midi\+Sequencer.\+Sequence.\+Input = new \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface}{Midi\+In\+Interface}}()}
+
+
+
+Used to interact with M\+I\+DI input devices. 
+
+
+
+Definition at line 32 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_adfd78368c42036fb37cddd33996baeb5}\label{class_midi_sequencer_1_1_sequence_adfd78368c42036fb37cddd33996baeb5}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!On@{On}}
+\index{On@{On}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{On}{On}}
+{\footnotesize\ttfamily bool? Midi\+Sequencer.\+Sequence.\+On =$>$ On\+Button.\+Is\+Checked}
+
+
+
+Property telling if sequence is enabled. 
+
+
+
+Definition at line 183 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a276ab4613ba8e7b6f3927c3f7d8cfd87}\label{class_midi_sequencer_1_1_sequence_a276ab4613ba8e7b6f3927c3f7d8cfd87}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!OnButton@{OnButton}}
+\index{OnButton@{OnButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{OnButton}{OnButton}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_midi_sequencer_1_1_toggle_with_label}{Toggle\+With\+Label}} Midi\+Sequencer.\+Sequence.\+On\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Toggle button that when turned off disables all M\+I\+DI output of sequence. 
+
+
+
+Definition at line 37 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a45016fc3d96be0d667f3129ee6861fbd}\label{class_midi_sequencer_1_1_sequence_a45016fc3d96be0d667f3129ee6861fbd}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Output@{Output}}
+\index{Output@{Output}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Output}{Output}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface}{Midi\+Out\+Interface}} Midi\+Sequencer.\+Sequence.\+Output = new \mbox{\hyperlink{class_midi_sequencer_1_1_midi_out_interface}{Midi\+Out\+Interface}}()}
+
+
+
+Used to interact with M\+I\+DI output devices. 
+
+
+
+Definition at line 42 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a99fabab63f5c1ffffb0c03d5b0719a83}\label{class_midi_sequencer_1_1_sequence_a99fabab63f5c1ffffb0c03d5b0719a83}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!RecordButton@{RecordButton}}
+\index{RecordButton@{RecordButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{RecordButton}{RecordButton}}
+{\footnotesize\ttfamily readonly Button Midi\+Sequencer.\+Sequence.\+Record\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Button used to turn on recording. 
+
+
+
+Definition at line 47 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_ac0c39bfed3251ae864932ac6a462047c}\label{class_midi_sequencer_1_1_sequence_ac0c39bfed3251ae864932ac6a462047c}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Recording@{Recording}}
+\index{Recording@{Recording}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Recording}{Recording}}
+{\footnotesize\ttfamily bool Midi\+Sequencer.\+Sequence.\+Recording\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Field telling if recording is enabled. 
+
+
+
+Definition at line 72 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_ad8bab2cd74f5fa1b270c520968fb63de}\label{class_midi_sequencer_1_1_sequence_ad8bab2cd74f5fa1b270c520968fb63de}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Rest@{Rest}}
+\index{Rest@{Rest}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Rest}{Rest}}
+{\footnotesize\ttfamily bool Midi\+Sequencer.\+Sequence.\+Rest\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Field telling if rest button was clicked. 
+
+
+
+Definition at line 77 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a37f0a2dc987e43a6a25d15228f3cc918}\label{class_midi_sequencer_1_1_sequence_a37f0a2dc987e43a6a25d15228f3cc918}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!RestButton@{RestButton}}
+\index{RestButton@{RestButton}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{RestButton}{RestButton}}
+{\footnotesize\ttfamily readonly Button Midi\+Sequencer.\+Sequence.\+Rest\+Button\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Rest button used for recording sequence. 
+
+
+
+Definition at line 52 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a2952951e35c3752bbdbea1e2567d5b80}\label{class_midi_sequencer_1_1_sequence_a2952951e35c3752bbdbea1e2567d5b80}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Sequencer@{Sequencer}}
+\index{Sequencer@{Sequencer}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Sequencer}{Sequencer}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} Midi\+Sequencer.\+Sequence.\+Sequencer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_midi_sequencer_1_1_sequencer}{Sequencer}} that hold this instance of \mbox{\hyperlink{class_midi_sequencer_1_1_sequence}{Sequence}}. 
+
+
+
+Definition at line 57 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a55d16a9d0ccd0758b608c5e5974146d5}\label{class_midi_sequencer_1_1_sequence_a55d16a9d0ccd0758b608c5e5974146d5}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!StackPanel@{StackPanel}}
+\index{StackPanel@{StackPanel}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{StackPanel}{StackPanel}}
+{\footnotesize\ttfamily readonly Virtualizing\+Stack\+Panel Midi\+Sequencer.\+Sequence.\+Stack\+Panel\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+UI container holding elements of sequence. 
+
+
+
+Definition at line 62 of file Sequence.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a1c5220d8276b3edd3bddce1ce0236591}\label{class_midi_sequencer_1_1_sequence_a1c5220d8276b3edd3bddce1ce0236591}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Bars@{Bars}}
+\index{Bars@{Bars}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Bars}{Bars}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Sequence.\+Bars = 2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Amount of bars in sequence. 
+
+
+
+Definition at line 198 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a2c2996eef8c9ae401ea0e5daeb2729e9}\label{class_midi_sequencer_1_1_sequence_a2c2996eef8c9ae401ea0e5daeb2729e9}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Beats@{Beats}}
+\index{Beats@{Beats}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Beats}{Beats}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Sequence.\+Beats = 4\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Amount of steps in a single bar. 
+
+
+
+Definition at line 193 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a8fde1942754f03cf52e8539cf2ef1706}\label{class_midi_sequencer_1_1_sequence_a8fde1942754f03cf52e8539cf2ef1706}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Gate@{Gate}}
+\index{Gate@{Gate}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Gate}{Gate}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Sequence.\+Gate = 100\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gate time of midi events in milliseconds. 
+
+
+
+Definition at line 188 of file Sequence.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_sequence_a5accae623ec22da47738fb514a8335ce}\label{class_midi_sequencer_1_1_sequence_a5accae623ec22da47738fb514a8335ce}} 
+\index{MidiSequencer.Sequence@{MidiSequencer.Sequence}!Steps@{Steps}}
+\index{Steps@{Steps}!MidiSequencer.Sequence@{MidiSequencer.Sequence}}
+\doxysubsubsection{\texorpdfstring{Steps}{Steps}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}$>$ Midi\+Sequencer.\+Sequence.\+Steps = new List$<$\mbox{\hyperlink{class_midi_sequencer_1_1_step}{Step}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+List of sequence\textquotesingle{}s steps. 
+
+
+
+Definition at line 203 of file Sequence.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_sequence_8cs}{Sequence.\+cs}}\end{DoxyCompactItemize}

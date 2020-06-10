@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_step_entity" kind="class" language="C#" prot="public">
+    <compoundname>MidiSequencer::StepEntity</compoundname>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_clock_step_entity" prot="public" virt="non-virtual">MidiSequencer.ClockStepEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_drum_step_entity" prot="public" virt="non-virtual">MidiSequencer.DrumStepEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_mono_step_entity" prot="public" virt="non-virtual">MidiSequencer.MonoStepEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_midi_sequencer_1_1_poly_step_entity" prot="public" virt="non-virtual">MidiSequencer.PolyStepEntity</derivedcompoundref>
+    <briefdescription>
+<para>Serialized <ref refid="class_midi_sequencer_1_1_step" kindref="compound">Step</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MidiSequencer.StepEntity</label>
+        <link refid="class_midi_sequencer_1_1_step_entity"/>
+      </node>
+      <node id="5">
+        <label>MidiSequencer.PolyStepEntity</label>
+        <link refid="class_midi_sequencer_1_1_poly_step_entity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MidiSequencer.DrumStepEntity</label>
+        <link refid="class_midi_sequencer_1_1_drum_step_entity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MidiSequencer.MonoStepEntity</label>
+        <link refid="class_midi_sequencer_1_1_mono_step_entity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MidiSequencer.ClockStepEntity</label>
+        <link refid="class_midi_sequencer_1_1_clock_step_entity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="MidiSequencer/StepEntity.cs" line="6" column="11" bodyfile="MidiSequencer/StepEntity.cs" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_toolbar" kind="class" language="C#" prot="public">
+    <compoundname>MidiSequencer::Toolbar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UserControl</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1a98ddf7de0a93db6b79e28dcf09e0c870" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; MidiSequencer.Toolbar._inChannels</definition>
+        <argsstring></argsstring>
+        <name>_inChannels</name>
+        <initializer>= new List&lt;string&gt;
+            {&quot;all&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot;, &quot;13&quot;, &quot;14&quot;, &quot;15&quot;, &quot;16&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="16" column="31" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1af5742e683c1695af75d9edff56343908" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; MidiSequencer.Toolbar._notes</definition>
+        <argsstring></argsstring>
+        <name>_notes</name>
+        <initializer>= new List&lt;string&gt;
+            {&quot;C&quot;, &quot;C# / Db&quot;, &quot;D&quot;, &quot;D# / Eb&quot;, &quot;E&quot;, &quot;F&quot;, &quot;F# / Gb&quot;, &quot;G&quot;, &quot;G# / Ab&quot;, &quot;A&quot;, &quot;A# / Bb&quot;, &quot;B&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="19" column="31" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1a2b543fcc9ca004db725b3fa7d0ce6733" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; MidiSequencer.Toolbar._octaves</definition>
+        <argsstring></argsstring>
+        <name>_octaves</name>
+        <initializer>= new List&lt;string&gt;
+            {&quot;-1&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="22" column="31" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1abd3fe63c2c97c381f206ce10d08a8f4c" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; MidiSequencer.Toolbar._outChannels</definition>
+        <argsstring></argsstring>
+        <name>_outChannels</name>
+        <initializer>= new List&lt;string&gt;
+            {&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot;, &quot;13&quot;, &quot;14&quot;, &quot;15&quot;, &quot;16&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="25" column="31" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1abbd0907cfd51a439f9c06302fd5dde65" prot="private" static="no" mutable="no">
+        <type>MidiInCapabilities[]</type>
+        <definition>MidiInCapabilities [] MidiSequencer.Toolbar._midiInDevices</definition>
+        <argsstring></argsstring>
+        <name>_midiInDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="28" column="36" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1affbdcb8d310ef17bff56f35b1da6ebf9" prot="private" static="no" mutable="no">
+        <type>MidiOutCapabilities[]</type>
+        <definition>MidiOutCapabilities [] MidiSequencer.Toolbar._midiOutDevices</definition>
+        <argsstring></argsstring>
+        <name>_midiOutDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="29" column="37" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_midi_sequencer_1_1_toolbar_1a0038245ccf6632450b1461a7a57875ce" prot="private" static="no" mutable="no">
+        <type><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref></type>
+        <definition>Sequence MidiSequencer.Toolbar._targetSequence</definition>
+        <argsstring></argsstring>
+        <name>_targetSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="31" column="26" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a8ef0ccdc8de4cf27610fcf84ff061479" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MidiSequencer.Toolbar.Toolbar</definition>
+        <argsstring>()</argsstring>
+        <name>Toolbar</name>
+        <briefdescription>
+<para>Initializes control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="36" column="16" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="36" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1ab240cc682631b9a9f1dca585e26a4795" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.SetSequence</definition>
+        <argsstring>(Sequence sequence)</argsstring>
+        <name>SetSequence</name>
+        <param>
+          <type><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref></type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Opens toolbar for passed sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_midi_sequencer_1_1_sequence" kindref="compound">Sequence</ref> for which to open toolbar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="194" column="21" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="194" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1afbafd83df528b9186eaa091a16ee4c7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.OutChannelForm_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>OutChannelForm_SelectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="62" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a74226e15bad0993687705ed03ab093b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.OutDeviceForm_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>OutDeviceForm_SelectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="67" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1ac331a5b95e250f5cd22197eacfdbd36f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.OutDeviceForm_DropDownOpened</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>OutDeviceForm_DropDownOpened</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="72" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a7f928e12c320640ced6fd86b0c842b4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.InChannelForm_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>InChannelForm_SelectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="79" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1af5e5e15974e390d6657284df97e1461f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.InDeviceForm_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>InDeviceForm_SelectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="85" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a299adaa94601172c69cd52021fee8ab2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.InDeviceForm_DropDownOpened</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>InDeviceForm_DropDownOpened</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="90" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a020e8abdb328ed6aa066ff191bced0ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.OnBeatsOrBarsChanged</definition>
+        <argsstring>(object sender, TextChangedEventArgs e)</argsstring>
+        <name>OnBeatsOrBarsChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>TextChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="97" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="97" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a96dd25758d57ffa6b860d86a7d2292a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.AttachEvents</definition>
+        <argsstring>()</argsstring>
+        <name>AttachEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="114" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="114" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a6cb3209c2834e48cd38b258ccd551463" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void MidiSequencer.Toolbar.DetectInput_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>DetectInput_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="132" column="28" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="132" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1ae8fde6aa45e1164cfee8de214e2f766e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.OutNoteOrOctChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>OutNoteOrOctChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="147" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1aae24b607543471752f43ba308d6d2853" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.InNoteOrOctChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>InNoteOrOctChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="152" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1a71911b50b7b7eadf4c38da5e3481b14d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.GateTime_TextChanged</definition>
+        <argsstring>(object sender, TextChangedEventArgs e)</argsstring>
+        <name>GateTime_TextChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>TextChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="157" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="157" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_midi_sequencer_1_1_toolbar_1ad9850d703ad6c09e4491b014962f55eb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MidiSequencer.Toolbar.DetachEvents</definition>
+        <argsstring>()</argsstring>
+        <name>DetachEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/Toolbar.xaml.cs" line="172" column="22" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="172" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_midi_sequencer_1_1_toolbar" kindref="compound">Toolbar</ref> control used to edit individual sequences. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MidiSequencer.Toolbar</label>
+        <link refid="class_midi_sequencer_1_1_toolbar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MidiSequencer.Toolbar</label>
+        <link refid="class_midi_sequencer_1_1_toolbar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UserControl</label>
+      </node>
+    </collaborationgraph>
+    <location file="MidiSequencer/Toolbar.xaml.cs" line="14" column="19" bodyfile="MidiSequencer/Toolbar.xaml.cs" bodystart="15" bodyend="277"/>
+    <listofallmembers>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a98ddf7de0a93db6b79e28dcf09e0c870" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_inChannels</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1abbd0907cfd51a439f9c06302fd5dde65" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_midiInDevices</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1affbdcb8d310ef17bff56f35b1da6ebf9" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_midiOutDevices</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1af5742e683c1695af75d9edff56343908" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_notes</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a2b543fcc9ca004db725b3fa7d0ce6733" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_octaves</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1abd3fe63c2c97c381f206ce10d08a8f4c" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_outChannels</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a0038245ccf6632450b1461a7a57875ce" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>_targetSequence</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a96dd25758d57ffa6b860d86a7d2292a3" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>AttachEvents</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1ad9850d703ad6c09e4491b014962f55eb" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>DetachEvents</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a6cb3209c2834e48cd38b258ccd551463" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>DetectInput_Click</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a71911b50b7b7eadf4c38da5e3481b14d" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>GateTime_TextChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a7f928e12c320640ced6fd86b0c842b4b" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>InChannelForm_SelectionChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a299adaa94601172c69cd52021fee8ab2" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>InDeviceForm_DropDownOpened</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1af5e5e15974e390d6657284df97e1461f" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>InDeviceForm_SelectionChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1aae24b607543471752f43ba308d6d2853" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>InNoteOrOctChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a020e8abdb328ed6aa066ff191bced0ad" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>OnBeatsOrBarsChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1afbafd83df528b9186eaa091a16ee4c7e" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>OutChannelForm_SelectionChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1ac331a5b95e250f5cd22197eacfdbd36f" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>OutDeviceForm_DropDownOpened</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a74226e15bad0993687705ed03ab093b7" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>OutDeviceForm_SelectionChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1ae8fde6aa45e1164cfee8de214e2f766e" prot="private" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>OutNoteOrOctChanged</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1ab240cc682631b9a9f1dca585e26a4795" prot="public" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>SetSequence</name></member>
+      <member refid="class_midi_sequencer_1_1_toolbar_1a8ef0ccdc8de4cf27610fcf84ff061479" prot="public" virt="non-virtual"><scope>MidiSequencer::Toolbar</scope><name>Toolbar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

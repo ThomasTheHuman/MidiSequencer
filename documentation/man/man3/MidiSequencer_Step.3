@@ -1,0 +1,274 @@
+.TH "MidiSequencer.Step" 3 "Wed Jun 10 2020" "MIDI Sequencer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MidiSequencer.Step \- Base UserControl for sequence's steps\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits UserControl\&.
+.PP
+Inherited by \fBMidiSequencer\&.ClockStep\fP, \fBMidiSequencer\&.DrumStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.PolyStep\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetNumber\fP (int displayNumber)"
+.br
+.RI "Sets number that is displayed on step\&. "
+.ti -1c
+.RI "void \fBSetWidth\fP (double width)"
+.br
+.RI "Sets width of step\&. "
+.ti -1c
+.RI "void \fBSetHighlight\fP (bool mode)"
+.br
+.RI "Sets highlight on or off\&. "
+.ti -1c
+.RI "abstract void \fBLoadMidi\fP (\fBSequence\fP sequence)"
+.br
+.RI "Loads midi from event pool to step\&. "
+.ti -1c
+.RI "abstract void \fBNoteOn\fP (\fBSequence\fP sequence)"
+.br
+.RI "Sends note on event\&. "
+.ti -1c
+.RI "abstract void \fBNoteOff\fP (\fBSequence\fP sequence)"
+.br
+.RI "Sends note off event\&. "
+.ti -1c
+.RI "abstract \fBStepEntity\fP \fBSerialize\fP ()"
+.br
+.RI "Serializes this instance of \fBStep\fP\&. "
+.ti -1c
+.RI "abstract void \fBDeserialize\fP (\fBStepEntity\fP step)"
+.br
+.RI "Deserializes passed entity by applying it's values to this instance of \fBStep\fP\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStep\fP ()"
+.br
+.RI "Initializes \fBStep\fP\&. "
+.ti -1c
+.RI "abstract \fBColorPair\fP \fBSetup\fP ()"
+.br
+.RI "Creates a new \fBColorPair\fP of this type of step\&. "
+.ti -1c
+.RI "void \fBToggle\fP ()"
+.br
+.RI "Toggles step state between enabled and disabled\&. "
+.ti -1c
+.RI "void \fBToggle\fP (object sender, RoutedEventArgs e)"
+.br
+.RI "Toggles step state between enabled and disabled\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "readonly Button \fBButton\fP"
+.br
+.RI "\fBStep\fP's button that this class is wrapped around\&. "
+.ti -1c
+.RI "readonly Grid \fBContainer\fP"
+.br
+.RI "Container that holds Button and Container\&. "
+.ti -1c
+.RI "readonly Border \fBHighlight\fP"
+.br
+.RI "Border used for highlighting step while recording or playback\&. "
+.ti -1c
+.RI "bool \fBOn\fP"
+.br
+.RI "Tells if step is enabled or disabled\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base UserControl for sequence's steps\&. 
+
+
+.PP
+Definition at line 11 of file Step\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MidiSequencer\&.Step\&.Step ()\fC [protected]\fP"
+
+.PP
+Initializes \fBStep\fP\&. 
+.PP
+Definition at line 38 of file Step\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract void MidiSequencer\&.Step\&.Deserialize (\fBStepEntity\fP step)\fC [pure virtual]\fP"
+
+.PP
+Deserializes passed entity by applying it's values to this instance of \fBStep\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstep\fP Serialized \fBStep\fP\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.DrumStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.ClockStep\fP\&.
+.SS "abstract void MidiSequencer\&.Step\&.LoadMidi (\fBSequence\fP sequence)\fC [pure virtual]\fP"
+
+.PP
+Loads midi from event pool to step\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsequence\fP Parent sequence\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.ClockStep\fP, \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.DrumStep\fP\&.
+.SS "abstract void MidiSequencer\&.Step\&.NoteOff (\fBSequence\fP sequence)\fC [pure virtual]\fP"
+
+.PP
+Sends note off event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsequence\fP Parent sequence\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.DrumStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.ClockStep\fP\&.
+.SS "abstract void MidiSequencer\&.Step\&.NoteOn (\fBSequence\fP sequence)\fC [pure virtual]\fP"
+
+.PP
+Sends note on event\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsequence\fP Parent sequence\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.MonoStep\fP, \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.DrumStep\fP, and \fBMidiSequencer\&.ClockStep\fP\&.
+.SS "abstract \fBStepEntity\fP MidiSequencer\&.Step\&.Serialize ()\fC [pure virtual]\fP"
+
+.PP
+Serializes this instance of \fBStep\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Serialized \fBStep\fP\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.DrumStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.ClockStep\fP\&.
+.SS "void MidiSequencer\&.Step\&.SetHighlight (bool mode)"
+
+.PP
+Sets highlight on or off\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImode\fP Desired state of highlight\&.
+.RE
+.PP
+
+.PP
+Definition at line 125 of file Step\&.cs\&.
+.SS "void MidiSequencer\&.Step\&.SetNumber (int displayNumber)"
+
+.PP
+Sets number that is displayed on step\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdisplayNumber\fP Number to be set\&.
+.RE
+.PP
+
+.PP
+Definition at line 80 of file Step\&.cs\&.
+.SS "abstract \fBColorPair\fP MidiSequencer\&.Step\&.Setup ()\fC [protected]\fP, \fC [pure virtual]\fP"
+
+.PP
+Creates a new \fBColorPair\fP of this type of step\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBColorPair\fP of this type of step\&.
+.RE
+.PP
+
+.PP
+Implemented in \fBMidiSequencer\&.ClockStep\fP, \fBMidiSequencer\&.PolyStep\fP, \fBMidiSequencer\&.MonoStep\fP, and \fBMidiSequencer\&.DrumStep\fP\&.
+.SS "void MidiSequencer\&.Step\&.SetWidth (double width)"
+
+.PP
+Sets width of step\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP Width to set\&.
+.RE
+.PP
+
+.PP
+Definition at line 89 of file Step\&.cs\&.
+.SS "void MidiSequencer\&.Step\&.Toggle ()\fC [protected]\fP"
+
+.PP
+Toggles step state between enabled and disabled\&. 
+.PP
+Definition at line 105 of file Step\&.cs\&.
+.SS "void MidiSequencer\&.Step\&.Toggle (object sender, RoutedEventArgs e)\fC [protected]\fP"
+
+.PP
+Toggles step state between enabled and disabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file Step\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "readonly Button MidiSequencer\&.Step\&.Button\fC [protected]\fP"
+
+.PP
+\fBStep\fP's button that this class is wrapped around\&. 
+.PP
+Definition at line 18 of file Step\&.cs\&.
+.SS "readonly Grid MidiSequencer\&.Step\&.Container\fC [protected]\fP"
+
+.PP
+Container that holds Button and Container\&. 
+.PP
+Definition at line 23 of file Step\&.cs\&.
+.SS "readonly Border MidiSequencer\&.Step\&.Highlight\fC [protected]\fP"
+
+.PP
+Border used for highlighting step while recording or playback\&. 
+.PP
+Definition at line 28 of file Step\&.cs\&.
+.SS "bool MidiSequencer\&.Step\&.On\fC [protected]\fP"
+
+.PP
+Tells if step is enabled or disabled\&. 
+.PP
+Definition at line 33 of file Step\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MIDI Sequencer from the source code\&.

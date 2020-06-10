@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_midi_sequencer_1_1_mono_sequence_entity" kind="class" language="C#" prot="public">
+    <compoundname>MidiSequencer::MonoSequenceEntity</compoundname>
+    <basecompoundref refid="class_midi_sequencer_1_1_sequence_entity" prot="public" virt="non-virtual">MidiSequencer.SequenceEntity</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_midi_sequencer_1_1_mono_sequence_entity_1aff8a07f57b7bd36a0a50110814afcbb7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_midi_sequencer_1_1_mono_step_entity" kindref="compound">MonoStepEntity</ref>[]</type>
+        <definition>MonoStepEntity [] MidiSequencer.MonoSequenceEntity.Steps</definition>
+        <argsstring></argsstring>
+        <name>Steps</name>
+        <briefdescription>
+<para>Array of steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MidiSequencer/MonoSequenceEntity.cs" line="12" column="31" bodyfile="MidiSequencer/MonoSequenceEntity.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MidiSequencer.MonoSequenceEntity</label>
+        <link refid="class_midi_sequencer_1_1_mono_sequence_entity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SequenceEntity</label>
+        <link refid="class_midi_sequencer_1_1_sequence_entity"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MidiSequencer.MonoSequenceEntity</label>
+        <link refid="class_midi_sequencer_1_1_mono_sequence_entity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SequenceEntity</label>
+        <link refid="class_midi_sequencer_1_1_sequence_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="MidiSequencer/MonoSequenceEntity.cs" line="7" column="11" bodyfile="MidiSequencer/MonoSequenceEntity.cs" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1a5f276ee2ca529a1494c31f761950bc2e" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Bars</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1a2a76ec1de6578e12c2d0f2565d1d9d1d" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Beats</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1ab24db4f8408bd004d87173f0dfa616b8" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Gate</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1a549a8036a33108705875c53a2e70cdcd" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Input</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1a9343fc5ce52cb8167156b873cd54c384" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Output</name></member>
+      <member refid="class_midi_sequencer_1_1_mono_sequence_entity_1aff8a07f57b7bd36a0a50110814afcbb7" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Steps</name></member>
+      <member refid="class_midi_sequencer_1_1_sequence_entity_1ac0609752d402a1bae5e0c453740a64ce" prot="public" virt="non-virtual"><scope>MidiSequencer::MonoSequenceEntity</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+\hypertarget{class_midi_sequencer_1_1_midi_in_interface}{}\doxysection{Midi\+Sequencer.\+Midi\+In\+Interface Class Reference}
+\label{class_midi_sequencer_1_1_midi_in_interface}\index{MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}}
+
+
+Class used for interfacing with M\+I\+DI input devices  
+
+
+Inheritance diagram for Midi\+Sequencer.\+Midi\+In\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_midi_sequencer_1_1_midi_in_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface_aa35e9595184fad2bae7b34a99686677a}{Connect\+To\+Device}} (int device\+Id)
+\begin{DoxyCompactList}\small\item\em Connects to device of specified id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Midi\+In\+Capabilities\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface_a13d3191b9ca486d352091320097aee63}{Get\+Midi\+In\+Devices}} ()
+\begin{DoxyCompactList}\small\item\em Gets connected M\+I\+DI input devices \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Midi\+Event $>$ \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface_a3fa48cbc460cca424774ae6c296a9b7e}{Event\+Pool}} = new List$<$Midi\+Event$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stores unhandled received events. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_midi_sequencer_1_1_midi_in_interface_ab32424f0835f014caa3e7d23bc94c2da}{Note\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stores amount of notes that are currently on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class used for interfacing with M\+I\+DI input devices 
+
+
+
+Definition at line 11 of file Midi\+In\+Interface.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_in_interface_aa35e9595184fad2bae7b34a99686677a}\label{class_midi_sequencer_1_1_midi_in_interface_aa35e9595184fad2bae7b34a99686677a}} 
+\index{MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}!ConnectToDevice@{ConnectToDevice}}
+\index{ConnectToDevice@{ConnectToDevice}!MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}}
+\doxysubsubsection{\texorpdfstring{ConnectToDevice()}{ConnectToDevice()}}
+{\footnotesize\ttfamily override void Midi\+Sequencer.\+Midi\+In\+Interface.\+Connect\+To\+Device (\begin{DoxyParamCaption}\item[{int}]{device\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Connects to device of specified id. 
+
+
+
+Implements \mbox{\hyperlink{class_midi_sequencer_1_1_midi_interface_a540dbb7c761e4bae0df7400e861840e2}{Midi\+Sequencer.\+Midi\+Interface}}.
+
+
+
+Definition at line 26 of file Midi\+In\+Interface.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_in_interface_a13d3191b9ca486d352091320097aee63}\label{class_midi_sequencer_1_1_midi_in_interface_a13d3191b9ca486d352091320097aee63}} 
+\index{MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}!GetMidiInDevices@{GetMidiInDevices}}
+\index{GetMidiInDevices@{GetMidiInDevices}!MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}}
+\doxysubsubsection{\texorpdfstring{GetMidiInDevices()}{GetMidiInDevices()}}
+{\footnotesize\ttfamily static Midi\+In\+Capabilities \mbox{[}$\,$\mbox{]} Midi\+Sequencer.\+Midi\+In\+Interface.\+Get\+Midi\+In\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets connected M\+I\+DI input devices 
+
+\begin{DoxyReturn}{Returns}
+Array of Midi\+In\+Capabilities
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Midi\+In\+Interface.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_in_interface_a3fa48cbc460cca424774ae6c296a9b7e}\label{class_midi_sequencer_1_1_midi_in_interface_a3fa48cbc460cca424774ae6c296a9b7e}} 
+\index{MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}!EventPool@{EventPool}}
+\index{EventPool@{EventPool}!MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}}
+\doxysubsubsection{\texorpdfstring{EventPool}{EventPool}}
+{\footnotesize\ttfamily List$<$Midi\+Event$>$ Midi\+Sequencer.\+Midi\+In\+Interface.\+Event\+Pool = new List$<$Midi\+Event$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Stores unhandled received events. 
+
+
+
+Definition at line 18 of file Midi\+In\+Interface.\+cs.
+
+\mbox{\Hypertarget{class_midi_sequencer_1_1_midi_in_interface_ab32424f0835f014caa3e7d23bc94c2da}\label{class_midi_sequencer_1_1_midi_in_interface_ab32424f0835f014caa3e7d23bc94c2da}} 
+\index{MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}!NoteCount@{NoteCount}}
+\index{NoteCount@{NoteCount}!MidiSequencer.MidiInInterface@{MidiSequencer.MidiInInterface}}
+\doxysubsubsection{\texorpdfstring{NoteCount}{NoteCount}}
+{\footnotesize\ttfamily int Midi\+Sequencer.\+Midi\+In\+Interface.\+Note\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Stores amount of notes that are currently on. 
+
+
+
+Definition at line 23 of file Midi\+In\+Interface.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Midi\+Sequencer/\mbox{\hyperlink{_midi_in_interface_8cs}{Midi\+In\+Interface.\+cs}}\end{DoxyCompactItemize}
