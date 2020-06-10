@@ -1,0 +1,2 @@
+# MidiSequencer
+Simple MIDI sequencer.
